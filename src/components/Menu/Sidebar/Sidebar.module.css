@@ -3,17 +3,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px; /* Largura da sidebar */
+    width: 300px;
     height: 100vh;
-    background-color: #023047; /* Um azul escuro como exemplo */
-    z-index: 1000; /* Z-index alto para ficar sobre tudo */
-
-    /* Estado inicial: escondida fora da tela, à direita */
+    z-index: 1000;
     transform: translateX(100%);
-    
-    /* A mágica da animação: transição suave para a propriedade transform */
     transition: transform 0.3s ease-in-out;
     box-shadow: none;
+    background: var(--glass-color);
+    border-radius: 4px 0px 0px 4px;
 }
 
 .sidebar.open {
@@ -24,21 +21,55 @@
 
 .sidebar ul {
     list-style: none;
-    padding: 20px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    margin: .5rem 0rem;
 }
 
 .sidebar li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.5rem;
-    display: block;
-    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: .5rem;
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.sidebar li a i {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li a i svg {
+    height: 32px;
+    width: 32px;
 }
 
 .sidebar li a:hover {
-    background-color: #219ebc;
+    /* background: rgba(110, 110, 110, 0.4); */
+	backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
 }
 
 .closeButton {

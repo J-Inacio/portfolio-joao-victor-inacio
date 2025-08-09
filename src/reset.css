@@ -13,4 +13,5 @@ body,
 #root {
 	height: 100%;
     overflow-x: hidden;
+	user-select: none;
 }
