@@ -4,6 +4,14 @@
 	justify-content: space-between;
 	padding: 1rem;
 	width: 100%;
+  background-color: var(--glass-color);
+  color: var(--text-color);
+}
+
+.myName {
+  font-family: "Unica One";
+  color: "var(--text-color)";
+  font-size: 1.125rem;
 }
 
 .btnsWrapper {
@@ -12,6 +20,7 @@
 	justify-content: center;
 	gap: 1rem;
 }
+
 
 /* .glass-card {
   background: rgba(255, 255, 255, 0.4);

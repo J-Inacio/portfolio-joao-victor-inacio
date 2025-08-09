@@ -1,5 +1,3 @@
-import lightIcon from "../../assets/icons/light-icon.svg";
-import darkIcon from "../../assets/icons/dark-icon.svg";
 import "./SwitchTheme.css";
 import { useEffect, useState } from "react";
 

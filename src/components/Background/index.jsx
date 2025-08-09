@@ -1,6 +1,6 @@
-import styles from "./Circles.module.css";
+import styles from "./Background.module.css";
 
-const Circles = () => {
+const Background = () => {
 	return (
 		<div className={styles.backgroundContainer}>
 			<div className={`${styles.animatedCircle} ${styles.circle1}`}></div>
@@ -14,4 +14,4 @@ const Circles = () => {
 	);
 };
 
-export default Circles;
+export default Background;
