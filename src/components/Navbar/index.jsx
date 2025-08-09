@@ -1,7 +1,8 @@
 import styles from "./Navbar.module.css";
 import logo from "../../assets/img/logo-joao.svg";
-import menuIcon from "../../assets/icons/menu-icon.svg";
+
 import { SwitchTheme } from "../SwitchTheme";
+import Menu from "../Menu";
 
 const Navbar = () => {
 	return (
@@ -20,7 +21,7 @@ const Navbar = () => {
 			<div className={styles.btnsWrapper}>
 				<SwitchTheme />
 				<p>ENGLISH</p>
-				<img src={menuIcon} alt="icone menu" onClick={() => alert("ola")} />
+				<Menu/>
 			</div>
 		</div>
 	);

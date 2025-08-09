@@ -6,6 +6,7 @@
 	width: 100%;
   background-color: var(--glass-color);
   color: var(--text-color);
+  border: none;
 }
 
 .myName {
