@@ -11,6 +11,7 @@
     box-shadow: none;
     background: var(--glass-color);
     border-radius: 4px 0px 0px 4px;
+    
 }
 
 .sidebar.open {

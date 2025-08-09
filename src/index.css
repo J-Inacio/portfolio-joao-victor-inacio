@@ -1,5 +1,11 @@
 :root {
-	--bg-color: linear-gradient(45deg, #a2d2ff, #bde0fe, #cdb4db);
+	--bg-color: linear-gradient(
+    135deg,
+    rgba(162, 210, 255, 0.5) 0%,   /* azul claro pastel */
+    rgba(144, 224, 239, 0.45) 35%, /* verde água suave */
+    rgba(72, 202, 228, 0.4) 70%,   /* turquesa médio */
+    rgba(2, 62, 138, 0.35) 100%    /* azul profundo oceânico */
+  );
 	--text-color: #012a4a;
 	--glass-color: rgba(214, 234, 248, 0.4);
 }

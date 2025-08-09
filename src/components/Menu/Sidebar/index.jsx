@@ -11,13 +11,13 @@ const Sidebar = ({ isOpen, onClose }) => {
 				<IoCloseSharp color="var(--text-color)"/>
 			</button>
 			<ul>
-                <li cla><a href="#"><i><IoMdHome/></i>Início</a></li>
+                <li><a href="#"><i><IoMdHome/></i>Início</a></li>
                 <li><a href="#"><i><IoPersonSharp /></i>Sobre mim</a></li>
                 <li><a href="#"><i><AiFillProject /></i>Projetos</a></li>
                 <li><a href="#"><i><SiHyperskill /></i>Habilidades</a></li>
                 <li><a href="#"><i><IoDocumentText /></i>Currículo</a></li>
-                <li><a href="#"><i><IoLogoLinkedin /></i>Linkedin</a></li>
-                <li><a href="#"><i><IoLogoGithub /></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/joaovictorinacio" target="_blank" rel="noopener noreferrer"><i><IoLogoLinkedin /></i>Linkedin</a></li>
+                <li><a href="https://github.com/J-Inacio" target="_blank" rel="noopener noreferrer"><i><IoLogoGithub /></i>Github</a></li>
             </ul>
 		</div>
 	);
