@@ -1,6 +1,7 @@
 import Background from './components/Background'
 import Navbar from './components/Navbar'
 import './index.css'
+import About from './Sections/About'
 import Hero from './Sections/Hero'
 
 function App() {
@@ -13,8 +14,7 @@ function App() {
     </header>
     <main>
      <Hero/>
-     <Hero/>
-     <Hero/>
+     <About/>
     </main>
    
     </>
