@@ -6,7 +6,7 @@ import Menu from "../Menu";
 
 const Navbar = () => {
 	return (
-		<div className={`${styles.navbar} glassFilter`}>
+		<nav className={`${styles.navbar} liteGlassFilter`}>
 			<div
 				style={{
 					display: "flex",
@@ -23,8 +23,8 @@ const Navbar = () => {
 				<p>ENGLISH</p>
 				<Menu/>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
-export { Navbar };
+export default Navbar;

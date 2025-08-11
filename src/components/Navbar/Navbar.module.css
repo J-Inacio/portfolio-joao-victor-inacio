@@ -7,6 +7,11 @@
   background-color: var(--glass-color);
   color: var(--text-color);
   border: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px); */
 }
 
 .myName {

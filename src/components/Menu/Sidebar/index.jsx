@@ -6,7 +6,7 @@ import { SiHyperskill } from "react-icons/si";
 
 const Sidebar = ({ isOpen, onClose }) => {
 	return (
-		<div className={`${styles.sidebar} ${isOpen ? styles.open : ""} glassFilter`}>
+		<div className={`${styles.sidebar} ${isOpen ? styles.open : ""} `}>
 			<button className={styles.closeButton} onClick={onClose}>
 				<IoCloseSharp color="var(--text-color)"/>
 			</button>

@@ -1,14 +1,22 @@
-// import Circles from './components/Circles'
 import Background from './components/Background'
-import { Navbar } from './components/Navbar'
+import Navbar from './components/Navbar'
 import './index.css'
+import Hero from './Sections/Hero'
 
 function App() {
 
   return (
     <>
     <Background/>
-    <Navbar/> 
+    <header>
+      <Navbar/>
+    </header>
+    <main>
+     <Hero/>
+     <Hero/>
+     <Hero/>
+    </main>
+   
     </>
   )
 }
