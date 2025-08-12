@@ -2,9 +2,9 @@ import styles from "./Navbar.module.css";
 import logo from "../../assets/img/logo-joao.svg";
 
 import { SwitchTheme } from "../SwitchTheme";
-import Menu from "../Menu";
+import MenuButton from "../MenuButton";
 
-const Navbar = () => {
+const Navbar = ({children}) => {
 	return (
 		<nav className={`${styles.navbar} liteGlassFilter`}>
 			<div
@@ -21,7 +21,7 @@ const Navbar = () => {
 			<div className={styles.btnsWrapper}>
 				<SwitchTheme />
 				<p>ENGLISH</p>
-				<Menu/>
+				{children}
 			</div>
 		</nav>
 	);

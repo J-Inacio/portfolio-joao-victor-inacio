@@ -1,7 +1,7 @@
 import Project from "../../components/Project";
 import styles from "./ProjectsList.module.css";
 
-const ProjectsList = () => {
+const ProjectsList = ({onImageClick}) => {
 	return (
 		<section className={`${styles.projectsContainer} glassFilter`}>
 			<h2>Projetos</h2>
@@ -17,6 +17,7 @@ const ProjectsList = () => {
 					title={"Psicoser"}
 					deployLink={"https://github.com/J-Inacio/psicoser"}
 					repositoryLink={"https://psicoser.vercel.app/"}
+					onImageClick={onImageClick}
 				/>
 			</ul>
             <a href="https://github.com/J-Inacio?tab=repositories" target="_blank" rel="noopener noreferrer" className= {styles.moreProjects}><h3>Ver mais projetos</h3></a>

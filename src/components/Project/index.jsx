@@ -2,8 +2,6 @@ import styles from "./Project.module.css";
 import Button from "../Button";
 import { IoEyeSharp, IoLogoGithub } from "react-icons/io5";
 import SkillsCard from "../SkillsCard";
-import { useState } from "react";
-import ImageModal from "../ImageModal";
 
 const Project = ({
 	img,
@@ -12,25 +10,13 @@ const Project = ({
 	skills,
 	repositoryLink,
 	deployLink,
+	onImageClick
 }) => {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-
-	const openModal = () => {
-		setIsModalOpen(true);
-	};
-
-	const closeModal = () => {
-		setIsModalOpen(false);
-	};
+	
 	return (
 		<div className={styles.projectContainer}>
-			<img src={img} alt="Screenshot do projeto" onClick={openModal}/>
-            <ImageModal
-            isOpen={isModalOpen}
-            onClose= {closeModal}
-            src={img}
-            alt={`Imagem ampliada do projeto ${title}`}
-            />
+			<img src={img} alt="Screenshot do projeto" onClick={() => {onImageClick(img)}}/>
+        
 			<aside className={styles.textWrapper}>
 				<h3>{title}</h3>
 				<p>{projectText}</p>

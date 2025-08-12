@@ -13,6 +13,11 @@
   animation: fadeIn 0.3s ease;
 }
 
+/* .modalOverlay img:hover {
+  cursor: zoom-in;
+  transform: scale(1.03)
+} */
+
 .modalContent {
   position: relative;
   cursor: default; 

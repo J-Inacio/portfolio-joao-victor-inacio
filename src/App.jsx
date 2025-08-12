@@ -1,26 +1,54 @@
-import Background from './components/Background'
-import Navbar from './components/Navbar'
-import './index.css'
-import About from './Sections/About'
-import Hero from './Sections/Hero'
-import ProjectsList from './Sections/ProjectsList'
+import { useState } from "react";
+import Background from "./components/Background";
+import MenuButton from "./components/MenuButton";
+import Navbar from "./components/Navbar";
+import "./index.css";
+import About from "./Sections/About";
+import Hero from "./Sections/Hero";
+import ProjectsList from "./Sections/ProjectsList";
+import Sidebar from "./components/MenuButton/Sidebar";
+import ImageModal from "./components/ImageModal";
 
 function App() {
+	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const toggleSidebar = () => {
+		setIsSidebarOpen(!isSidebarOpen);
+	};
 
-  return (
-    <>
-    <Background/>
-    <header>
-      <Navbar/>
-    </header>
-    <main>
-     <Hero/>
-     <About/>
-     <ProjectsList/>
-    </main>
-   
-    </>
-  )
+	const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+	const [selectedImageUrl, setSelectedImageUrl] = useState("");
+
+	const openImageModal = (imageUrl) => {
+		setSelectedImageUrl(imageUrl);
+		setIsImageModalOpen(true);
+	};
+
+	const closeImageModal = () => {
+		setIsImageModalOpen(false);
+		setSelectedImageUrl("");
+	};
+	return (
+		<>
+			<Background />
+			<header>
+				<Navbar>
+					<MenuButton onOpen={toggleSidebar} />
+				</Navbar>
+			</header>
+			<main>
+				<Hero />
+				<About />
+				<ProjectsList onImageClick={openImageModal} />
+			</main>
+			<Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+			<ImageModal
+				isOpen={isImageModalOpen}
+				onClose={closeImageModal}
+				src={selectedImageUrl}
+				alt="Imagem do projeto ampliada"
+			/>
+		</>
+	);
 }
 
-export default App
+export default App;
