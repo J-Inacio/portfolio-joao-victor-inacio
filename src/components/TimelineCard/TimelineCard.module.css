@@ -1,0 +1,32 @@
+.container {
+    list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   border-top: 1px solid var(--glass-color);
+}
+
+.data {
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local::before {
+    content: "•";
+    color: var(--btn-color);
+    font-size: 2rem;
+}
+
+.skills {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}

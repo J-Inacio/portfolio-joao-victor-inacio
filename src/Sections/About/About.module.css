@@ -17,6 +17,8 @@
     height: 3rem;
      width: 100%;
      cursor: pointer;
+     background-color: var(--btn-color);
+     color: var(--text-color);
 }
 
 .aboutContainer button:hover {
@@ -24,8 +26,8 @@
 }
 
 .aboutContainer button:nth-child(2) {
-    border-left: 1px solid #d1d1d1;
-    border-right: 1px solid #d1d1d1;
+    border-left: 1px solid var(--glass-color);
+    border-right: 1px solid var(--glass-color);
 }
 
 .aboutContainer aside {

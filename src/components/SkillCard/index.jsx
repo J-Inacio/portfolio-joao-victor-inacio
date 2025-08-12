@@ -1,10 +1,10 @@
 import styles from "./SkillCard.module.css"
 
 
-const SkillCard = ({skill}) => {
+const SkillCard = ({children}) => {
     return (
         <div className= {styles.skillCard}>
-            {skill}
+            {children}
         </div>
     )
 }
