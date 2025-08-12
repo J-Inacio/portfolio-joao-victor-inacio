@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "./About.module.css";
 import TimelineCard from "../../components/TimelineCard";
-import SkillCard from "../../components/SkillCard";
+import SkillsCard from "../../components/SkillsCard";
+// import SkillsCard from "../../components/SkillsCard";
 
 const AboutJsx = () => {
 	return (
@@ -33,22 +34,7 @@ const About = () => {
         title={"Ensino Superior em Análise e Desenvolvimento de Sistemas(EAD)"}
         text={"Estou cursando Análise e Desenvolvimento de Sistemas, um curso superior de tecnologia voltado para a criação, manutenção e melhoria de sistemas e aplicações. Durante a formação, tenho aprendido sobre programação, banco de dados, desenvolvimento web e boas práticas de engenharia de software, sempre com foco em desenvolver soluções eficientes e inovadoras. Por ser um curso de tecnólogo, o aprendizado é dinâmico e direcionado para as demandas do mercado, o que me permite aplicar na prática os conhecimentos adquiridos e me preparar para atuar em diferentes áreas da tecnologia, desde o desenvolvimento de sistemas até a gestão de projetos."}
         >
-
-        <SkillCard>
-            Agile Methods
-        </SkillCard>
-        <SkillCard>
-            Python
-        </SkillCard>
-        <SkillCard>
-            Database
-        </SkillCard>
-        <SkillCard>
-            HTTP Protocol
-        </SkillCard>
-        <SkillCard>
-           Computer Architecture
-        </SkillCard>
+        <SkillsCard skills={["Agile Methods","Python", "Database","HTTP Protocol", "Computer Architecture" ]}/>
         </TimelineCard>
 
         <TimelineCard 
@@ -57,37 +43,7 @@ const About = () => {
         title={"Ensino Técnico em Desenvolvimento de Sistemas"}
         text={"Sou formado em Técnico em Desenvolvimento de Sistemas pela ETEC, onde adquiri uma base sólida em programação, lógica, modelagem de dados e desenvolvimento de aplicações. O curso me proporcionou experiência prática com linguagens e tecnologias amplamente utilizadas no mercado, além de incentivar o trabalho em equipe e a resolução de problemas reais. Essa formação foi fundamental para despertar ainda mais meu interesse pela área e consolidar minha escolha por seguir carreira em tecnologia."}
         >
-
-        <SkillCard>
-            Javascript
-        </SkillCard>
-
-        <SkillCard>
-            HTML
-        </SkillCard>
-
-        <SkillCard>
-            CSS
-        </SkillCard>
-        <SkillCard>
-            MySQL
-        </SkillCard>
-        <SkillCard>
-            c#
-        </SkillCard>
-        <SkillCard>
-            Python
-        </SkillCard>
-        <SkillCard>
-            Java
-        </SkillCard>
-        <SkillCard>
-            Excel
-        </SkillCard>
-        <SkillCard>
-            Word
-        </SkillCard>
-
+        <SkillsCard skills={["Javascript","Python", "HTML"," CSS", "MySQL", "C#", "Python", "Java", "Excel", "Word"  ]}/>
         </TimelineCard>
         </>
 	};

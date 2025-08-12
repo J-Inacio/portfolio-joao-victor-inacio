@@ -1,0 +1,13 @@
+.projectContainer {
+    padding: 1rem;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 1rem;
+}
+.projectContainer img {
+    border-radius: 4px;
+    object-fit: cover;
+}

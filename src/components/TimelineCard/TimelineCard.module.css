@@ -24,9 +24,3 @@
     font-size: 2rem;
 }
 
-.skills {
-    padding: 1rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-}
