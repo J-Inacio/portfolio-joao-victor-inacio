@@ -3,11 +3,70 @@
     margin: 1rem 0rem;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(15px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     gap: 1rem;
+    border-radius: .25rem;
 }
+
 .projectContainer img {
     border-radius: 4px;
     object-fit: cover;
+}
+
+.btnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.githubLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 3.75rem;
+    width: 3.75rem;
+    min-width: 32px;
+    min-height: 32px;
+    backdrop-filter: blur(15px);
+    background-color: var(--glass-color);
+    border-radius: 999999px;
+    color: var(--text-color);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.5rem;
+}
+
+.githubLink:hover {
+    box-shadow: none;
+}
+
+
+.githubLink svg {
+    border-radius: 9999px;
+}
+
+.deployLink {
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    gap: 1rem;
+    border: none;
+    height: 3rem;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.deployLink:hover {
+    box-shadow: none;
+}
+
+.deployLink svg {
+    color: var(--text-color);
+    font-size: 2em;
 }

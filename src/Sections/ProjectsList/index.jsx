@@ -15,10 +15,11 @@ const ProjectsList = () => {
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed tristique mauris, et consectetur nulla. Vivamus eu sapien quis odio fermentum egestas varius ut mauris. Sed ut velit eros. Aliquam erat volutpat. Donec a ante orci. Fusce tristique ac leo at tempus. Etiam pharetra eget orci in eleifend. Phasellus sit amet nibh quam. Cras sodales lorem vitae elit sollicitudin dignissim at et felis. Mauris eu felis sed lorem volutpat rhoncus. Vestibulum aliquet, velit placerat elementum feugiat, nunc ipsum viverra lectus, sed dapibus neque enim sed augue."
 					}
 					title={"Psicoser"}
-					deployLink={"#"}
-					repositoryLink={"#"}
+					deployLink={"https://github.com/J-Inacio/psicoser"}
+					repositoryLink={"https://psicoser.vercel.app/"}
 				/>
 			</ul>
+            <a href="https://github.com/J-Inacio?tab=repositories" target="_blank" rel="noopener noreferrer" className= {styles.moreProjects}><h3>Ver mais projetos</h3></a>
 		</section>
 	);
 };

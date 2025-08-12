@@ -1,6 +1,9 @@
 import styles from "./Project.module.css";
 import Button from "../Button";
 import { IoEyeSharp, IoLogoGithub } from "react-icons/io5";
+import SkillsCard from "../SkillsCard";
+import { useState } from "react";
+import ImageModal from "../ImageModal";
 
 const Project = ({
 	img,
@@ -10,28 +13,51 @@ const Project = ({
 	repositoryLink,
 	deployLink,
 }) => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => {
+		setIsModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setIsModalOpen(false);
+	};
 	return (
 		<div className={styles.projectContainer}>
-			<img src={img} alt="Screenshot do projeto" />
-            <aside className= {styles.textWrapper}>
-                <h3>{title}</h3>
-			    <p>{projectText}</p>
-            </aside>
-			
+			<img src={img} alt="Screenshot do projeto" onClick={openModal}/>
+            <ImageModal
+            isOpen={isModalOpen}
+            onClose= {closeModal}
+            src={img}
+            alt={`Imagem ampliada do projeto ${title}`}
+            />
+			<aside className={styles.textWrapper}>
+				<h3>{title}</h3>
+				<p>{projectText}</p>
+			</aside>
+
 			<p>Tecnologias:</p>
-			<div className= {styles.projectSkills}>
-				{/* {skills.map(skill => <SkillsCard key={skill}>{skill}</SkillsCard>
-				)} */}
-			</div>
-			<div className= {styles.btnWrapper}>
-				<a href={repositoryLink} target="_blank" rel="noopener noreferrer">
+			<SkillsCard skills={skills} />
+			<div className={styles.btnWrapper}>
+				<a
+					href={repositoryLink}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={styles.githubLink}
+				>
 					<IoLogoGithub />
 				</a>
-				<Button>
-					<a href={deployLink} target="_blank" rel="noopener noreferrer">
-						<span>Veja o Projeto</span> <IoEyeSharp />
-					</a>
-				</Button>
+				<a
+					href={deployLink}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={styles.deployLink}
+				>
+					<p>Veja o Projeto</p>{" "}
+					<i>
+						<IoEyeSharp />
+					</i>
+				</a>
 			</div>
 		</div>
 	);

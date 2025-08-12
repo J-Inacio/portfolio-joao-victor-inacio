@@ -4,9 +4,9 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 85%;
-    /* gap: 1rem; */
+    gap: 1rem;
     border: none;
     height: 3rem;
     padding: .5rem 1rem;
