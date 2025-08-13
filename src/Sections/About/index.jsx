@@ -4,6 +4,7 @@ import TimelineCard from "../../components/TimelineCard";
 import SkillsCard from "../../components/SkillsCard";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const About = () => {
 	const { t } = useTranslation();
@@ -62,11 +63,18 @@ const About = () => {
 			</>
 		),
 	};
+	const { ref, inView } = useScrollAnimation();
 	return (
 		<Element name="about">
 			<section
+				ref={ref}
 				id="about"
-				className={`${styles.aboutContainer} liteGlassFilter`}
+				className={`
+					${styles.aboutContainer} 
+					liteGlassFilter
+					fade-in-section
+					${inView ? 'is-visible' : ''}
+					`}
 			>
 				<nav>
 					<button onClick={() => setOption("about")}>{t('about.aboutTitle')}</button>

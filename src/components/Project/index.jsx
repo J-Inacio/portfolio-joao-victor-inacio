@@ -3,6 +3,7 @@ import Button from "../Button";
 import { IoEyeSharp, IoLogoGithub } from "react-icons/io5";
 import SkillsCard from "../SkillsCard";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const Project = ({
 	img,
@@ -13,9 +14,18 @@ const Project = ({
 	deployLink,
 	onImageClick,
 }) => {
-	const {t} = useTranslation()
+	const { t } = useTranslation();
+	const { ref, inView } = useScrollAnimation();
 	return (
-		<div className={`${styles.projectContainer} liteGlassFilter`}>
+		<div
+			ref={ref}
+			className={`
+			${styles.projectContainer} 
+			fade-in-section
+			${inView ? "is-visible" : ""}
+			liteGlassFilter
+		`}
+		>
 			<img
 				src={img}
 				alt="Screenshot do projeto"
@@ -29,7 +39,7 @@ const Project = ({
 				<p>{projectText}</p>
 			</aside>
 
-			<p>{t('projects.technologies')}</p>
+			<p>{t("projects.technologies")}</p>
 			<SkillsCard skills={skills} />
 			<div className={styles.btnWrapper}>
 				<a
@@ -46,7 +56,7 @@ const Project = ({
 					rel="noopener noreferrer"
 					className={styles.deployLink}
 				>
-					<p>{t('projects.viewButton')}</p> <IoEyeSharp />
+					<p>{t("projects.viewButton")}</p> <IoEyeSharp />
 				</a>
 			</div>
 		</div>

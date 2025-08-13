@@ -2,6 +2,7 @@ import styles from "./Skills.module.css";
 import Technologies from "../../components/Technologies";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const technologiesData = [
 	{
@@ -60,10 +61,15 @@ const technologiesData = [
 
 const Skills = () => {
 	const {t} = useTranslation()
+	const {ref, inView} = useScrollAnimation()
 	return (
 		<Element className={`${styles.mainContainerSkills} glassFilter`}>
 			<h2>{t('skills.skillsTitle')}</h2>
-			<section id="#skills" className={styles.skillsContainer}>
+			<section id="#skills" ref={ref} className={`
+				${styles.skillsContainer}
+				fade-in-section
+				${inView ? 'is-visible' : ''}
+				`}>
 				{technologiesData.map(tec => <Technologies
 				key={tec.techName}
 				src={tec.src}

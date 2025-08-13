@@ -9,6 +9,7 @@ import styles from "./Footer.module.css";
 import { useState } from "react";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const Footer = () => {
 	const [isCopied, SetIsCopied] = useState(false);
@@ -28,11 +29,18 @@ const Footer = () => {
 	};
     
 	const {t} = useTranslation()
+	const {ref, inView} = useScrollAnimation()
 	return (
         <Element name="footer">
         <footer
 			id="#contact"
-			className={`${styles.footerContainer} liteGlassFilter`}
+			ref={ref}
+			className={`
+				${styles.footerContainer} 
+				liteGlassFilter
+				fade-in-section
+				${inView ? 'is-visible' : ''}
+				`}
 		>
 			<h3>{t('footer.contactTitle')}</h3>
 			<div className={styles.contactWrapper}>
