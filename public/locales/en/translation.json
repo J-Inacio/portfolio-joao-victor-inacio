@@ -6,6 +6,20 @@
     "buttonText": "Download my resume"
 
   },
+  "about": {
+    "aboutTitle": "About me",
+    "aboutP1": "I’m currently studying Systems Analysis and Development, and since childhood, I’ve had a strong connection with technology. During my technical course at ETEC de Embu, I discovered programming and realized how it can turn ideas into reality. I saw that, through code and communication, it’s possible to solve problems, create innovative solutions, and positively impact people’s lives.",
+    "aboutP2": "I have hands-on experience with JavaScript, React, Python, MySQL, HTML, and CSS, along with knowledge of Git and Figma.",
+    "aboutP3": "I enjoy combining logical thinking and creativity to develop projects that are both functional and intuitive. To me, technology is not just about tools and programming languages, but about building something that truly makes sense to the people who will use it.",
+    "educationTitle": "Education",
+    "adsDate" : "Nov 2024 - currently",
+    "adsTitle": "Undergraduate Technology Degree in Systems Analysis and Development (Distance Learning)",
+    "adsText": "I’m pursuing a degree in Systems Analysis and Development, a technology-focused program dedicated to creating, maintaining, and improving systems and applications. Throughout my studies, I’ve been learning about programming, databases, web development, and software engineering best practices, always aiming to deliver efficient and innovative solutions. As a technology degree, the learning process is dynamic and tailored to market demands, allowing me to put my knowledge into practice and prepare to work in various areas of technology—from system development to project management.",
+    "etecDate": "Jun 2022 - Dec 2023",
+    "etecTitle": "Technical High School Diploma in Systems Development",
+    "etecText": "I hold a Technical Diploma in Systems Development from ETEC, where I gained a solid foundation in programming, logic, data modeling, and application development. The course provided me with hands-on experience using widely adopted languages and technologies, while also fostering teamwork and real-world problem-solving skills. This education was key in further fueling my interest in the field and solidifying my decision to pursue a career in technology."
+
+  },
   "navbar": {
     "home": "Início",
     "about": "Sobre Mim",
