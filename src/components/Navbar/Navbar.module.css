@@ -14,10 +14,16 @@
 	-webkit-backdrop-filter: blur(15px);
 }
 
-.myName {
+.langBtn {
   font-family: "Unica One";
-  color: "var(--text-color)";
+  color: var(--text-color);
   font-size: 1.125rem;
+  border: none;
+  border-radius: .25rem;
+  height: 2rem;
+  width: 4rem;
+  cursor: pointer;
+  background-color: var(--btn-color);
 }
 
 .btnsWrapper {
