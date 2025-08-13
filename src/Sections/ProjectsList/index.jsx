@@ -46,6 +46,7 @@ const ProjectsList = ({ onImageClick }) => {
 					({ img, skills, deployLink, projectText, repositoryLink, title }) => {
 						return (
 							<Project
+							key={title}
 								img={img}
 								skills={skills}
 								projectText={projectText}

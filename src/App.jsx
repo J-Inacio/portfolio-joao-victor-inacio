@@ -8,6 +8,7 @@ import Hero from "./Sections/Hero";
 import ProjectsList from "./Sections/ProjectsList";
 import Sidebar from "./components/MenuButton/Sidebar";
 import ImageModal from "./components/ImageModal";
+import Skills from "./Sections/Skills";
 
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -39,6 +40,7 @@ function App() {
 				<Hero />
 				<About />
 				<ProjectsList onImageClick={openImageModal} />
+        <Skills/>
 			</main>
 			<Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
 			<ImageModal
