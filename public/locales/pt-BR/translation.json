@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Olá, eu sou",
+    "subtitle": "Desenvolvedor Front-end",
+    "resume": "Sou desenvolvedor front-end com paixão por interfaces limpas, acessíveis e impactantes. Trabalho com HTML, CSS, JavaScript e Figma, sempre buscando equilíbrio entre design e performance. Me aprofundo cada vez mais em React, TypeScript e boas práticas de UX/UI.",
+    "buttonText": "Baixe meu currículo"
+
+  },
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre Mim",
+    "projects": "Projetos"
+  }
+}

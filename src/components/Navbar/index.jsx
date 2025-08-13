@@ -3,6 +3,7 @@ import logo from "../../assets/img/logo-joao.svg";
 
 import { SwitchTheme } from "../SwitchTheme";
 import MenuButton from "../MenuButton";
+import i18n from "../../i18n";
 
 const Navbar = ({children}) => {
 	return (
@@ -16,11 +17,11 @@ const Navbar = ({children}) => {
 				}}
 			>
 				<img src={logo} alt="logo joão" />
-				<p className={styles.myName}>J-INACIO</p>
+				<p >J-INACIO</p>
 			</div>
 			<div className={styles.btnsWrapper}>
 				<SwitchTheme />
-				<p>ENGLISH</p>
+				<button className={styles.myName} onClick={() => i18n.changeLanguage('en')}>ENGLISH</button>
 				{children}
 			</div>
 		</nav>

@@ -10,6 +10,7 @@ import Sidebar from "./components/MenuButton/Sidebar";
 import ImageModal from "./components/ImageModal";
 import Skills from "./Sections/Skills";
 import Footer from "./Sections/Footer";
+import './i18n.js';
 
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
