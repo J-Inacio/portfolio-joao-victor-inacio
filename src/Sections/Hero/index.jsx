@@ -25,7 +25,7 @@ const Hero = () => {
 					{t('hero.resume')}
 				</p>
 			</aside>
-			<a href={myCurriculum}>
+			<a href={myCurriculum} download="Curriculo_Joao_Inacio.pdf">
 				<span>{t('hero.buttonText')}</span>
 				<FiDownload />
 			</a>
