@@ -2,7 +2,7 @@ import styles from "./Technologies.module.css"
 
 const Technologies = ({src, techName})=> {
     return (
-        <div className={styles.techContainer}>
+        <div className={`${styles.techContainer} liteGlassFilter`}>
            <img src={src} alt= {techName} />
         </div>
     )

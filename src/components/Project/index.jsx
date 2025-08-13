@@ -14,7 +14,7 @@ const Project = ({
 }) => {
 	
 	return (
-		<div className={styles.projectContainer}>
+		<div className={`${styles.projectContainer} liteGlassFilter`}>
 			<img src={img} alt="Screenshot do projeto" onClick={() => {onImageClick(img)}}/>
         
 			<aside className={styles.textWrapper}>

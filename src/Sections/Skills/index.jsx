@@ -66,12 +66,6 @@ const Skills = () => {
 				src={tec.src}
 				techName={tec.techName}
 				/>)}
-				<Technologies
-					src={
-						"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-					}
-					techName={"Javascript"}
-				/>
 			</section>
 		</div>
 	);
