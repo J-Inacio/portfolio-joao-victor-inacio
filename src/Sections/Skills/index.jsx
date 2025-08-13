@@ -1,6 +1,7 @@
 import styles from "./Skills.module.css";
 import Technologies from "../../components/Technologies";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const technologiesData = [
 	{
@@ -58,9 +59,10 @@ const technologiesData = [
 ];
 
 const Skills = () => {
+	const {t} = useTranslation()
 	return (
 		<Element className={`${styles.mainContainerSkills} glassFilter`}>
-			<h2>Minhas Habilidades</h2>
+			<h2>{t('skills.skillsTitle')}</h2>
 			<section id="#skills" className={styles.skillsContainer}>
 				{technologiesData.map(tec => <Technologies
 				key={tec.techName}

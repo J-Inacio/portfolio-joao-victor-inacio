@@ -12,8 +12,10 @@ import {
 import { AiFillProject } from "react-icons/ai";
 import { SiHyperskill } from "react-icons/si";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = ({ isOpen, onClose }) => {
+	const {t} = useTranslation()
 	return (
 		<div className={`${styles.sidebar} ${isOpen ? styles.open : ""} `}>
 			<button className={styles.closeButton} onClick={onClose}>
@@ -22,17 +24,17 @@ const Sidebar = ({ isOpen, onClose }) => {
 			<ul>
 				<li>
 					<Link
-						to="hero" // O 'name' da sua seção Hero
-						spy={true} // Opcional: destaca o link quando a seção está visível
-						smooth={true} // Ativa a rolagem suave
-						offset={-80} // A MÁGICA: Ajusta a posição final da rolagem (em pixels)
-						duration={500} // Duração da animação em milissegundos
-						onClick={onClose} // Fecha a sidebar após o clique
+						to="hero" 
+						spy={true}
+						smooth={true}
+						offset={-80}
+						duration={500}
+						onClick={onClose} 
 					>
 						<i>
 							<IoMdHome />
 						</i>
-						<span>Início</span>
+						<span>{t('navbar.home')}</span>
 					</Link>
 				</li>
 				<li>
@@ -46,7 +48,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 						<i>
 							<IoPersonSharp />
 						</i>
-						<span>Sobre mim</span>
+						<span>{t('navbar.about')}</span>
 					</Link>
 				</li>
 				<li>
@@ -60,7 +62,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 						<i>
 							<AiFillProject />
 						</i>
-						<span>Projetos</span>
+						<span>{t('navbar.projects')}</span>
 					</Link>
 				</li>
 				<li>
@@ -74,7 +76,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 						<i>
 							<SiHyperskill />
 						</i>
-						<span>Habilidades</span>
+						<span>{t('navbar.skills')}</span>
 					</Link>
 				</li>
                 <li>
@@ -88,7 +90,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 						<i>
 							<MdOutlineAlternateEmail />
 						</i>
-						<span>Contato</span>
+						<span>{t('navbar.contact')}</span>
 					</Link>
 				</li>
 				<li>
@@ -96,7 +98,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 						<i>
 							<IoDocumentText />
 						</i>
-						Currículo
+						{t('navbar.resume')}
 					</a>
 				</li>
 				<li>

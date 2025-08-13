@@ -2,9 +2,7 @@ import styles from "./Navbar.module.css";
 import logo from "../../assets/img/logo-joao.svg";
 
 import { SwitchTheme } from "../SwitchTheme";
-import MenuButton from "../MenuButton";
 import i18n from "../../i18n";
-
 const Navbar = ({children}) => {
 	return (
 		<nav className={`${styles.navbar} liteGlassFilter`}>
@@ -17,7 +15,7 @@ const Navbar = ({children}) => {
 				}}
 			>
 				<img src={logo} alt="logo joão" />
-				<p >J-INACIO</p>
+				<p>J-INACIO</p>
 			</div>
 			<div className={styles.btnsWrapper}>
 				<SwitchTheme />

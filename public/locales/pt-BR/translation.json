@@ -1,4 +1,12 @@
 {
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato",
+    "resume": "Currículo"
+  },
   "hero": {
     "title": "Olá, eu sou",
     "subtitle": "Desenvolvedor Front-end",
@@ -8,11 +16,11 @@
   },
   "about": {
     "aboutTitle": "Sobre mim",
+    "educationTitle": "Formação",
+    "experienceTitle": "Experiência",
     "aboutP1": "Sou estudante de Análise e Desenvolvimento de Sistemas e, desde a infância, sempre tive uma forte conexão com a tecnologia. No curso técnico da ETEC de Embu, descobri a programação e percebi o quanto ela pode transformar ideias em realidade. Vi que, por meio do código e da comunicação, é possível resolver problemas, criar soluções inovadoras e impactar a vida das pessoas de forma positiva.",
     "aboutP2": "Tenho experiência prática com JavaScript, React, Python, MySQL, HTML e CSS, além de conhecimentos em Git e Figma.",
     "aboutP3": "Gosto de unir pensamento lógico e criatividade para desenvolver projetos que sejam funcionais e intuitivos. Para mim, tecnologia não é apenas sobre ferramentas e linguagens, mas sobre construir algo que faça sentido para quem vai usar.",
-
-    "educationTitle": "Formação",
     "adsDate" : "Nov 2024 - Atualmente",
     "adsTitle": "Ensino Superior em Análise e Desenvolvimento de Sistemas(EAD)",
     "adsText": "Estou cursando Análise e Desenvolvimento de Sistemas, um curso superior de tecnologia voltado para a criação, manutenção e melhoria de sistemas e aplicações. Durante a formação, tenho aprendido sobre programação, banco de dados, desenvolvimento web e boas práticas de engenharia de software, sempre com foco em desenvolver soluções eficientes e inovadoras. Por ser um curso de tecnólogo, o aprendizado é dinâmico e direcionado para as demandas do mercado, o que me permite aplicar na prática os conhecimentos adquiridos e me preparar para atuar em diferentes áreas da tecnologia, desde o desenvolvimento de sistemas até a gestão de projetos.",
@@ -21,9 +29,21 @@
     "etecText": "Sou formado em Técnico em Desenvolvimento de Sistemas pela ETEC, onde adquiri uma base sólida em programação, lógica, modelagem de dados e desenvolvimento de aplicações. O curso me proporcionou experiência prática com linguagens e tecnologias amplamente utilizadas no mercado, além de incentivar o trabalho em equipe e a resolução de problemas reais. Essa formação foi fundamental para despertar ainda mais meu interesse pela área e consolidar minha escolha por seguir carreira em tecnologia."
 
   },
-  "navbar": {
-    "home": "Início",
-    "about": "Sobre Mim",
-    "projects": "Projetos"
+  "projects": {
+    "projectsTitle": "Projetos",
+    "psicoserTxt": "O Psicoser é uma landing page desenvolvida para um consultório psicológico real, com o objetivo de atrair mais pacientes e ampliar a divulgação dos serviços. O projeto foi criado com foco em acessibilidade, clareza e impacto visual, garantindo que a mensagem central do consultório fosse transmitida de forma acolhedora e profissional.",
+    "gasfinderTxt": "GasFinder, é um projeto que facilita a busca pelos melhores preços de combustíveis e postos próximos a você! Desenvolvido como Trabalho de Conclusão de Curso (TCC) na ETEC de Embu, o GasFinder utiliza dados atualizados da ANP (Agência Nacional do Petróleo) para fornecer informações precisas e confiáveis.",
+    "transactionManagerTitle": "Gerenciador de Transações",
+    "transactionManagerTxt": "Este projeto foi desenvolvido para exercitar o uso de requisições a uma API, utilizando a ferramenta json-server para simular uma API RESTful a partir de um arquivo JSON. No projeto é possível adicionar, editar e remover transações utilizando métodos: POST | PUT | DELETE",
+    "viewButton": "Veja o Projeto",
+    "moreProjects": "Ver mais projetos",
+    "technologies": "Tecnologias:"
+  },
+  "skills": {
+    "skillsTitle": "Minhas Habilidades"
+  },
+  "footer": {
+    "contactTitle": "Entre em contato",
+    "footerTxt": "© 2025 - Criado e Desenvolvido por"
   }
 }

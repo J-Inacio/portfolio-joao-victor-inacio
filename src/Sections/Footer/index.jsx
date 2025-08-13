@@ -8,6 +8,7 @@ import { IoMdCheckbox } from "react-icons/io";
 import styles from "./Footer.module.css";
 import { useState } from "react";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
 	const [isCopied, SetIsCopied] = useState(false);
@@ -26,13 +27,14 @@ const Footer = () => {
 		}
 	};
     
+	const {t} = useTranslation()
 	return (
         <Element name="footer">
         <footer
 			id="#contact"
 			className={`${styles.footerContainer} liteGlassFilter`}
 		>
-			<h3>Entre em contato</h3>
+			<h3>{t('footer.contactTitle')}</h3>
 			<div className={styles.contactWrapper}>
 				<div className={`${styles.emailWrapper}`}>
 					<a href="mailto:j.inacio.s@hotmail.com">j.inacio.s@hotmail.com</a>
@@ -60,7 +62,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<p>
-				© 2025 - Criado e Desenvolvido por <span>João Victor</span>
+				{t('footer.footerTxt')}<span> João Victor</span>
 			</p>
 		</footer>
     </Element>

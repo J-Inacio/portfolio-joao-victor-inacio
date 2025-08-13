@@ -2,6 +2,7 @@ import styles from "./Project.module.css";
 import Button from "../Button";
 import { IoEyeSharp, IoLogoGithub } from "react-icons/io5";
 import SkillsCard from "../SkillsCard";
+import { useTranslation } from "react-i18next";
 
 const Project = ({
 	img,
@@ -12,6 +13,7 @@ const Project = ({
 	deployLink,
 	onImageClick,
 }) => {
+	const {t} = useTranslation()
 	return (
 		<div className={`${styles.projectContainer} liteGlassFilter`}>
 			<img
@@ -27,7 +29,7 @@ const Project = ({
 				<p>{projectText}</p>
 			</aside>
 
-			<p>Tecnologias:</p>
+			<p>{t('projects.technologies')}</p>
 			<SkillsCard skills={skills} />
 			<div className={styles.btnWrapper}>
 				<a
@@ -44,7 +46,7 @@ const Project = ({
 					rel="noopener noreferrer"
 					className={styles.deployLink}
 				>
-					<p>Veja o Projeto</p> <IoEyeSharp />
+					<p>{t('projects.viewButton')}</p> <IoEyeSharp />
 				</a>
 			</div>
 		</div>
