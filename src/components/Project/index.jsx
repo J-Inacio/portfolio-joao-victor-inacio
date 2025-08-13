@@ -10,13 +10,18 @@ const Project = ({
 	skills,
 	repositoryLink,
 	deployLink,
-	onImageClick
+	onImageClick,
 }) => {
-	
 	return (
 		<div className={`${styles.projectContainer} liteGlassFilter`}>
-			<img src={img} alt="Screenshot do projeto" onClick={() => {onImageClick(img)}}/>
-        
+			<img
+				src={img}
+				alt="Screenshot do projeto"
+				onClick={() => {
+					onImageClick(img);
+				}}
+			/>
+
 			<aside className={styles.textWrapper}>
 				<h3>{title}</h3>
 				<p>{projectText}</p>
@@ -39,10 +44,7 @@ const Project = ({
 					rel="noopener noreferrer"
 					className={styles.deployLink}
 				>
-					<p>Veja o Projeto</p>{" "}
-					<i>
-						<IoEyeSharp />
-					</i>
+					<p>Veja o Projeto</p> <IoEyeSharp />
 				</a>
 			</div>
 		</div>

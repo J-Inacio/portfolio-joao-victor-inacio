@@ -2,10 +2,13 @@ import perfilPhoto from "../../assets/img/perfil-photo.png";
 import styles from "./Hero.module.css";
 import Button from "../../components/Button"
 import { FiDownload } from "react-icons/fi";
+import { Element } from "react-scroll";
+import myCurriculum from "../../assets/curriculoJoaoDev.pdf"
 
 const Hero = () => {
 	return (
-		<section id={styles.hero} className="liteGlassFilter">
+		<Element name="hero">
+			<section id={styles.hero} className="liteGlassFilter">
 			<img src={perfilPhoto} alt="Foto João" />
 			<aside className= {styles.title}>
 				<p>Olá, eu sou</p>
@@ -23,11 +26,13 @@ const Hero = () => {
 					cada vez mais em React, TypeScript e boas práticas de UX/UI.
 				</p>
 			</aside>
-			<Button>
-				<p>BAIXE MEU CURRÍCULO</p>
+			<a href={myCurriculum}>
+				<span>BAIXE MEU CURRÍCULO</span>
 				<FiDownload />
-			</Button>
+			</a>
 		</section>
+		</Element>
+		
 	);
 };
 

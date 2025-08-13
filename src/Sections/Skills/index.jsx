@@ -1,5 +1,6 @@
 import styles from "./Skills.module.css";
 import Technologies from "../../components/Technologies";
+import { Element } from "react-scroll";
 
 const technologiesData = [
 	{
@@ -58,7 +59,7 @@ const technologiesData = [
 
 const Skills = () => {
 	return (
-		<div className={`${styles.mainContainerSkills} glassFilter`}>
+		<Element className={`${styles.mainContainerSkills} glassFilter`}>
 			<h2>Minhas Habilidades</h2>
 			<section id="#skills" className={styles.skillsContainer}>
 				{technologiesData.map(tec => <Technologies
@@ -67,7 +68,7 @@ const Skills = () => {
 				techName={tec.techName}
 				/>)}
 			</section>
-		</div>
+		</Element>
 	);
 };
 

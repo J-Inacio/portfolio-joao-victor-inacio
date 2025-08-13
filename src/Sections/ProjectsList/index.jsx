@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Project from "../../components/Project";
 import styles from "./ProjectsList.module.css";
 
@@ -39,7 +40,8 @@ const projectsData = [
 
 const ProjectsList = ({ onImageClick }) => {
 	return (
-		<section className={`${styles.projectsContainer} glassFilter`}>
+		<Element name="projects">
+			<section className={`${styles.projectsContainer} glassFilter`} id="projects">
 			<h2>Projetos</h2>
 			<ul>
 				{projectsData.map(
@@ -68,6 +70,8 @@ const ProjectsList = ({ onImageClick }) => {
 				<h3>Ver mais projetos</h3>
 			</a>
 		</section>
+		</Element>
+		
 	);
 };
 

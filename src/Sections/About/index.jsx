@@ -2,8 +2,7 @@ import { useState } from "react";
 import styles from "./About.module.css";
 import TimelineCard from "../../components/TimelineCard";
 import SkillsCard from "../../components/SkillsCard";
-// import SkillsCard from "../../components/SkillsCard";
-
+import { Element } from "react-scroll";
 const AboutJsx = () => {
 	return (
 		<>
@@ -48,6 +47,7 @@ const About = () => {
         </>
 	};
 	return (
+		<Element name="about">
 		<section id="about" className={`${styles.aboutContainer} liteGlassFilter`}>
 			<nav>
 				<button onClick={() => setOption("about")}>Sobre mim</button>
@@ -56,6 +56,7 @@ const About = () => {
 			</nav>
 			<aside>{texts[option]}</aside>
 		</section>
+		</Element>
 	);
 };
 

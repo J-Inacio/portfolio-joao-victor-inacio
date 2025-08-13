@@ -7,6 +7,7 @@ import {
 import { IoMdCheckbox } from "react-icons/io";
 import styles from "./Footer.module.css";
 import { useState } from "react";
+import { Element } from "react-scroll";
 
 const Footer = () => {
 	const [isCopied, SetIsCopied] = useState(false);
@@ -24,8 +25,10 @@ const Footer = () => {
 			console.error("Falha ao copiar o texto: ", err);
 		}
 	};
+    
 	return (
-		<footer
+        <Element name="footer">
+        <footer
 			id="#contact"
 			className={`${styles.footerContainer} liteGlassFilter`}
 		>
@@ -60,6 +63,8 @@ const Footer = () => {
 				© 2025 - Criado e Desenvolvido por <span>João Victor</span>
 			</p>
 		</footer>
+    </Element>
+		
 	);
 };
 
