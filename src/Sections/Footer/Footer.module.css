@@ -1,0 +1,61 @@
+.footerContainer {
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.footerContainer p {
+    font-size: .75rem;
+}
+
+.contactWrapper{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contactLink, .emailWrapper {
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    border: none;
+    height: 3rem;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.emailWrapper {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailWrapper a{
+    color: var(--text-color);
+}
+
+.emailWrapper i {
+    display: flex;
+    font-size: 2rem;
+}
+
+.contactLink svg {
+    font-size: 2rem;
+}
