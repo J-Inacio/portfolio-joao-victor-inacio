@@ -53,7 +53,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 				</li>
 				<li>
                     <Link
-						to="#projects"
+						to="projects"
 						smooth={true} 
 						offset={-80} 
 						duration={500}
