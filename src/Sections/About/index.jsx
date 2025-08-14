@@ -73,13 +73,19 @@ const About = () => {
 					${styles.aboutContainer} 
 					liteGlassFilter
 					fade-in-section
-					${inView ? 'is-visible' : ''}
+					${inView ? "is-visible" : ""}
 					`}
 			>
 				<nav>
-					<button onClick={() => setOption("about")}>{t('about.aboutTitle')}</button>
-					<button onClick={() => setOption("experience")}>{t('about.experienceTitle')}</button>
-					<button onClick={() => setOption("education")}>{t('about.educationTitle')}</button>
+					<button onClick={() => setOption("about")}>
+						{t("about.aboutTitle")}
+					</button>
+					<button onClick={() => setOption("experience")}>
+						{t("about.experienceTitle")}
+					</button>
+					<button onClick={() => setOption("education")}>
+						{t("about.educationTitle")}
+					</button>
 				</nav>
 				<aside>{texts[option]}</aside>
 			</section>

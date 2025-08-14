@@ -1,21 +1,21 @@
 :root {
 	--bg-color: linear-gradient(
-    135deg,
-    rgba(162, 210, 255, 0.5) 0%,  
-    rgba(144, 224, 239, 0.45) 35%, 
-    rgba(72, 202, 228, 0.4) 70%,   
-    rgba(2, 62, 138, 0.35) 100%   
-  );
+		135deg,
+		rgba(162, 210, 255, 0.5) 0%,
+		rgba(144, 224, 239, 0.45) 35%,
+		rgba(72, 202, 228, 0.4) 70%,
+		rgba(2, 62, 138, 0.35) 100%
+	);
 	--text-color: #012a4a;
 	--glass-color: rgba(214, 234, 248, 0.5);
-	--btn-color: #f4f4f4
+	--btn-color: #f4f4f4;
 }
 
 [data-theme="dark"] {
 	--bg-color: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77);
 	--text-color: #fff;
 	--glass-color: rgba(110, 110, 110, 0.4);
-	--btn-color: #012a4a
+	--btn-color: #012a4a;
 }
 
 * {
@@ -35,7 +35,7 @@ main {
 .glassFilter {
 	background: rgba(255, 255, 255, 0.25);
 	backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,18 +48,13 @@ main {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 .fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Classe que será adicionada via JavaScript quando a seção estiver visível.
-  Define o estado final da animação.
-*/
 .fade-in-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
-

@@ -60,21 +60,27 @@ const technologiesData = [
 ];
 
 const Skills = () => {
-	const {t} = useTranslation()
-	const {ref, inView} = useScrollAnimation()
+	const { t } = useTranslation();
+	const { ref, inView } = useScrollAnimation();
 	return (
 		<Element className={`${styles.mainContainerSkills} glassFilter`}>
-			<h2>{t('skills.skillsTitle')}</h2>
-			<section id="#skills" ref={ref} className={`
+			<h2>{t("skills.skillsTitle")}</h2>
+			<section
+				id="#skills"
+				ref={ref}
+				className={`
 				${styles.skillsContainer}
 				fade-in-section
-				${inView ? 'is-visible' : ''}
-				`}>
-				{technologiesData.map(tec => <Technologies
-				key={tec.techName}
-				src={tec.src}
-				techName={tec.techName}
-				/>)}
+				${inView ? "is-visible" : ""}
+				`}
+			>
+				{technologiesData.map((tec) => (
+					<Technologies
+						key={tec.techName}
+						src={tec.src}
+						techName={tec.techName}
+					/>
+				))}
 			</section>
 		</Element>
 	);
