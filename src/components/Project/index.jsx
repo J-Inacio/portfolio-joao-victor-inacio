@@ -46,7 +46,7 @@ const Project = ({
 					href={repositoryLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					className={styles.githubLink}
+					className={`${styles.githubLink} glass-btn`}
 				>
 					<IoLogoGithub />
 				</a>
@@ -54,7 +54,7 @@ const Project = ({
 					href={deployLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					className={styles.deployLink}
+					className={`${styles.deployLink} glass-btn`}
 				>
 					<p>{t("projects.viewButton")}</p> <IoEyeSharp />
 				</a>

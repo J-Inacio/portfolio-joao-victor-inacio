@@ -5,15 +5,15 @@
 	width: 100%;
 	height: 100%;
 	/* overflow: hidden; */
-	background: var(--bg-color);
+	background-image: var(--bg-color);
 	background-size: 400% 400%;
-	animation: gradientAnimation 15s ease infinite;
+	animation: gradientAnimation 25s ease infinite;
 }
 
 .animatedCircle {
 	position: absolute;
 	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.12);
+	background-color: var(--circle-color);
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
@@ -71,17 +71,22 @@
 	animation-delay: 26s;
 }
 
-
 @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 25%;
+	}
+	25% {
+		background-position: 100% 75%;
+	}
+	50% {
+		background-position: 100% 25%;
+	}
+	75% {
+		background-position: 0% 75%;
+	}
+	100% {
+		background-position: 0% 25%;
+	}
 }
 
 @keyframes move-diag-up-right {

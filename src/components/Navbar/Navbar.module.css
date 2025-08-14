@@ -19,10 +19,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
-  height: 100%;
-  cursor: pointer;
-  padding: .5rem;
+	gap: .25rem;
+	padding: .5rem;
+	height: 100%;
+	cursor: pointer;
+}
+
+.nameLogo {
+	font-family: "Unica One";
 }
 
 .langBtn {
@@ -33,20 +37,20 @@
 	height: 100%;
 	width: 4rem;
 	cursor: pointer;
-  background: none;
+	background: none;
 	/* box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.langBtn:hover {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-  background: rgba(255, 255, 255, 0.25);
+.langBtn:hover, .logoWrapper:hover {
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	background: rgba(255, 255, 255, 0.25);
 }
 
 .btnsWrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
-  height: 100%;
+	gap: .5rem;
+	height: 100%;
 }

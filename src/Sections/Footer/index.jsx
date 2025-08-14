@@ -44,7 +44,7 @@ const Footer = () => {
 			>
 				<h3>{t("footer.contactTitle")}</h3>
 				<div className={styles.contactWrapper}>
-					<div className={`${styles.emailWrapper}`}>
+					<div className={`${styles.emailWrapper} glass-btn`}>
 						<a href="mailto:j.inacio.s@hotmail.com">j.inacio.s@hotmail.com</a>
 						<i onClick={handleCopy}>
 							{isCopied ? <IoMdCheckbox /> : <IoCopySharp />}
@@ -52,7 +52,7 @@ const Footer = () => {
 					</div>
 
 					<a
-						className={styles.contactLink}
+						className={`${styles.contactLink} glass-btn`}
 						href="https://github.com/J-Inacio"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const Footer = () => {
 					</a>
 
 					<a
-						className={styles.contactLink}
+						className={`${styles.contactLink} glass-btn`}
 						href="https://www.linkedin.com/in/joaovictorinacio/"
 						target="_blank"
 						rel="noopener noreferrer"

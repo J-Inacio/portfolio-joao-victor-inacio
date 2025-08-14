@@ -3,12 +3,12 @@
    display: flex;
    flex-direction: column;
    gap: .5rem;
-   border-top: 1px solid var(--glass-color);
+   border-top: 1px solid var(--button-border-color);
 }
 
 .data {
     text-align: center;
-    margin-top: .5rem;
+    margin-top: 1rem;
     font-weight: bold;
 }
 

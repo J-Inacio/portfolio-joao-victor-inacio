@@ -40,10 +40,8 @@ function App() {
 			</header>
 			<main>
 				<Hero />
-
 				<About />
 				<ProjectsList onImageClick={openImageModal} />
-
 				<Skills />
 			</main>
 			<Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />

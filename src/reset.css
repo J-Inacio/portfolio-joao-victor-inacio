@@ -11,6 +11,5 @@ body,
 html,
 body,
 #root {
-    overflow-x: hidden;
 	user-select: none;
 }

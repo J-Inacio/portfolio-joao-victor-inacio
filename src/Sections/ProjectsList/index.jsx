@@ -9,7 +9,7 @@ const ProjectsList = ({ onImageClick }) => {
 		{
 			img: "https://github.com/J-Inacio/psicoser/blob/main/src/assets/img/screenshot3.png?raw=true",
 			skills: ["Javascript", "HTML", "CSS", "Webpack", "Figma"],
-			projectText: t("projects.psicoserTxt"),
+			projectText: "projects.psicoserTxt",
 			title: "Psicoser",
 			repositoryLink: "https://github.com/J-Inacio/psicoser",
 			deployLink: "https://psicoser.vercel.app/",
@@ -25,7 +25,7 @@ const ProjectsList = ({ onImageClick }) => {
 				"Node JS",
 				"Google Maps API",
 			],
-			projectText: t("projects.gasfinderTxt"),
+			projectText: "projects.gasfinderTxt",
 			title: "GasFinder",
 			repositoryLink: "https://github.com/J-Inacio/GasFinder",
 			deployLink: "https://github.com/J-Inacio/GasFinder",
@@ -33,8 +33,8 @@ const ProjectsList = ({ onImageClick }) => {
 		{
 			img: "https://github.com/J-Inacio/transactions-with-api/raw/main/transactions-with-api.gif",
 			skills: ["Javascript", "HTML", "CSS", "json-server"],
-			projectText: t("projects.transactionManagerTxt"),
-			title: t("projects.transactionManagerTitle"),
+			projectText: "projects.transactionManagerTxt",
+			title: "projects.transactionManagerTitle",
 			repositoryLink: "https://github.com/J-Inacio/transactions-with-api",
 			deployLink: "https://github.com/J-Inacio/transactions-with-api",
 		},
@@ -42,7 +42,7 @@ const ProjectsList = ({ onImageClick }) => {
 	return (
 		<Element name="projects">
 			<section
-				className={`${styles.projectsContainer} glassFilter`}
+				className={`${styles.projectsContainer} liteGlassFilter`}
 				id="projects"
 			>
 				<h2>{t("projects.projectsTitle")}</h2>
@@ -61,8 +61,8 @@ const ProjectsList = ({ onImageClick }) => {
 									key={title}
 									img={img}
 									skills={skills}
-									projectText={projectText}
-									title={title}
+									projectText={t(projectText)}
+									title={t(title)}
 									deployLink={deployLink}
 									repositoryLink={repositoryLink}
 									onImageClick={onImageClick}

@@ -77,13 +77,33 @@ const About = () => {
 					`}
 			>
 				<nav>
-					<button onClick={() => setOption("about")}>
+					<button
+						onClick={() => setOption("about")}
+						className={`
+						glass-btn 
+						${styles.aboutBtn} 
+						${option === "about" ? styles.active : ""}`}
+					>
 						{t("about.aboutTitle")}
 					</button>
-					<button onClick={() => setOption("experience")}>
+					<button
+						onClick={() => setOption("experience")}
+						className={`
+							glass-btn
+							${styles.aboutBtn} 
+							${option === "experience" ? styles.active : ""}
+							`}
+					>
 						{t("about.experienceTitle")}
 					</button>
-					<button onClick={() => setOption("education")}>
+					<button
+						onClick={() => setOption("education")}
+						className={`
+							glass-btn
+							${styles.aboutBtn} 
+							${option === "education" ? styles.active : ""}
+							`}
+					>
 						{t("about.educationTitle")}
 					</button>
 				</nav>
