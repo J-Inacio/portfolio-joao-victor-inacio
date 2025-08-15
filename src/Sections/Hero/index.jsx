@@ -12,7 +12,8 @@ const Hero = () => {
 		<Element name="hero">
 			<section id={styles.hero} className="liteGlassFilter">
 				<img src={perfilPhoto} alt="Foto João" />
-				<aside className={styles.title}>
+				<div className={styles.contentWrapper}>
+					<aside className={styles.title}>
 					<p>
 						<TypeAnimation
 							sequence={["Olá, eu sou"]}
@@ -48,6 +49,8 @@ const Hero = () => {
 					<span>{t("hero.buttonText")}</span>
 					<FiDownload />
 				</a>
+				</div>
+				
 			</section>
 		</Element>
 	);
