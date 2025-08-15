@@ -1,27 +1,22 @@
-import styles from "./Sidebar.module.css";
 import { IoMdHome } from "react-icons/io";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import myCurriculumPDF from '../../../assets/curriculoJoaoDev.pdf'
+import myCurriculumPDF from '../../assets/curriculoJoaoDev.pdf'
 import {
-	IoPersonSharp,
-	IoLogoLinkedin,
-	IoDocumentText,
-	IoLogoGithub,
-	IoCloseSharp,
+    IoPersonSharp,
+    IoLogoLinkedin,
+    IoDocumentText,
+    IoLogoGithub,
 } from "react-icons/io5";
 import { AiFillProject } from "react-icons/ai";
 import { SiHyperskill } from "react-icons/si";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
-const Sidebar = ({ isOpen, onClose }) => {
-	const {t} = useTranslation()
-	return (
-		<div className={`${styles.sidebar} ${isOpen ? styles.open : ""} `}>
-			<button className={styles.closeButton} onClick={onClose}>
-				<IoCloseSharp color="var(--text-color)" />
-			</button>
-			<ul>
+	
+const NavLinks = ({onClose}) => {
+    const {t} = useTranslation()
+    return(
+        <ul>
 				<li>
 					<Link
 						to="hero" 
@@ -126,8 +121,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 					</a>
 				</li>
 			</ul>
-		</div>
-	);
-};
+    )
+}
 
-export default Sidebar;
+export default NavLinks

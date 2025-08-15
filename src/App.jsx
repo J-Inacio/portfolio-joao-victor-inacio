@@ -6,7 +6,7 @@ import "./index.css";
 import About from "./Sections/About";
 import Hero from "./Sections/Hero";
 import ProjectsList from "./Sections/ProjectsList";
-import Sidebar from "./components/MenuButton/Sidebar";
+import Sidebar from "./components/Sidebar/index.jsx";
 import ImageModal from "./components/ImageModal";
 import Skills from "./Sections/Skills";
 import Footer from "./Sections/Footer";

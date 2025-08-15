@@ -45,3 +45,10 @@
   transform-origin: left center;
   transform: translateY(-100%);
 }
+
+
+@media (min-width: 75rem) {
+	.menuButton {
+    display: none;
+  }
+}

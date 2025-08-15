@@ -1,6 +1,4 @@
-import { useState } from "react";
 import styles from "./MenuButton.module.css";
-import Sidebar from "./Sidebar";
 
 const MenuButton = ({onOpen}) => {
 	
