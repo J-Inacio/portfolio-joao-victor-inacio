@@ -26,3 +26,51 @@
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
 }
+
+
+/* Media Query 512px */
+@media (min-width: 32rem) {
+	.mainContainerSkills  {
+		margin: 1rem 1.25rem;
+	}
+
+	.skillsContainer  {
+		padding: 1rem 1.25rem;
+        grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* Media Query 768px */
+@media (min-width: 48rem) {
+	.mainContainerSkills {
+		margin: 0rem auto;
+		margin-top: 2rem;
+		max-width: 45.125rem; 
+	}
+    
+    .skillsContainer  {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+/* Media Query 1024px */
+@media (min-width: 64rem) {
+	.mainContainerSkills {
+		max-width: 60.125rem;
+	}
+
+    .skillsContainer  {
+	    grid-template-columns: repeat(7, 1fr);
+	}
+}
+
+/* Media Query 1440px */
+@media (min-width: 90rem) {
+	.mainContainerSkills   {
+		max-width: 85.125rem;
+	}
+
+    .skillsContainer  {
+	    grid-template-columns: repeat(8, 1fr);
+	}
+}

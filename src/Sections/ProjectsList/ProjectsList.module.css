@@ -85,10 +85,6 @@
         gap: 1rem;
         width: 100%;
     }
-
-	.aboutContainer aside, .aboutContainer button, .moreProjects {
-		font-size: 1.25rem;
-	}
 }
 
 /* Media Query 1440px */
