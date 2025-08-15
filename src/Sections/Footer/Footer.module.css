@@ -1,57 +1,85 @@
 .footerContainer {
-    margin-top: 2rem;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+	margin-top: 2rem;
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
 }
 
 .footerContainer p {
-    font-size: .75rem;
+	font-size: 0.75rem;
 }
 
-.contactWrapper{
-    display: grid;
-    gap: 1rem;
-    width: 100%;
-    padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.contactWrapper {
+	display: grid;
+	gap: 1rem;
+	width: 100%;
+	padding: 1rem 0rem;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	max-width: 30rem;
 }
 
-.contactLink, .emailWrapper {
-    /* color: var(--text-color);
-    background-color: var(--btn-color); */
-    /* font-weight: bold; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 1rem;
-    height: 3rem;
-    cursor: pointer;
-    text-transform: lowercase;
+.contactLink,
+.emailWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	height: 3rem;
+	cursor: pointer;
+	text-transform: lowercase;
+}
+.contactLink {
+	max-width: 16rem;
 }
 
 .emailWrapper {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	grid-column: span 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.emailWrapper a{
-    color: var(--text-color);
+.emailWrapper a {
+	color: var(--text-color);
 }
 
 .emailWrapper i {
-    display: flex;
-    font-size: 2rem;
+	display: flex;
+	font-size: 2rem;
 }
 
 .contactLink svg {
-    font-size: 2rem;
+	font-size: 2rem;
 }
+
+/* Media Query 512px */
+@media (min-width: 32rem) {
+	.projectsContainer {
+		margin: 1rem 1.25rem;
+	}
+
+	.projectsList {
+		padding: 1rem 1.25rem;
+	}
+}
+
+/* Media Query 768px */
+/* @media (min-width: 48rem) {
+	
+} */
+
+/* Media Query 1024px */
+/* @media (min-width: 64rem) {
+	
+} */
+
+/* Media Query 1440px */
+/* @media (min-width: 90rem) {
+	
+} */
