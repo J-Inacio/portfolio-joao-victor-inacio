@@ -14,43 +14,46 @@ const Hero = () => {
 				<img src={perfilPhoto} alt="Foto João" />
 				<div className={styles.contentWrapper}>
 					<aside className={styles.title}>
-					<p>
-						<TypeAnimation
-							sequence={["Olá, eu sou"]}
-							wrapper="span"
-							speed={50}
-							cursor={false}
-						/>
-					</p>
-					<p>
-						<strong>
+						<p>
 							<TypeAnimation
-								sequence={[1000, "João Victor Inácio."]}
+								sequence={["Olá, eu sou"]}
 								wrapper="span"
 								speed={50}
 								cursor={false}
 							/>
-						</strong>
-					</p>
-					<p>
-						<TypeAnimation
-							sequence={[2100, "Desenvolvedor Front-end"]}
-							wrapper="span"
-							speed={50}
-							cursor={true}
-						/>
-					</p>
-				</aside>
+						</p>
+						<p>
+							<strong>
+								<TypeAnimation
+									sequence={[1000, "João Victor Inácio."]}
+									wrapper="span"
+									speed={50}
+									cursor={false}
+								/>
+							</strong>
+						</p>
+						<p>
+							<TypeAnimation
+								sequence={[2100, "Desenvolvedor Front-end"]}
+								wrapper="span"
+								speed={50}
+								cursor={true}
+							/>
+						</p>
+					</aside>
 
-				<aside className={styles.text}>
-					<p>{t("hero.resume")}</p>
-				</aside>
-				<a className="glass-btn" href={myCurriculum} download="Curriculo_Joao_Inacio.pdf">
-					<span>{t("hero.buttonText")}</span>
-					<FiDownload />
-				</a>
+					<aside className={styles.text}>
+						<p>{t("hero.resume")}</p>
+					</aside>
+					<a
+						className={`glass-btn ${styles.cvButton}`}
+						href={myCurriculum}
+						download="Curriculo_Joao_Inacio.pdf"
+					>
+						<span>{t("hero.buttonText")}</span>
+						<FiDownload />
+					</a>
 				</div>
-				
 			</section>
 		</Element>
 	);

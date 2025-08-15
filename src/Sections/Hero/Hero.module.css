@@ -7,7 +7,7 @@
 	gap: 1rem;
 }
 
-#hero a {
+.cvButton {
 	text-transform: uppercase;
 	max-width: 16rem;
 }
@@ -41,21 +41,20 @@
 }
 
 /* Media Query 512px */
-@media (min-width: 32rem){
+@media (min-width: 32rem) {
 	#hero {
 		padding: 1rem 2rem;
-		
 	}
 
-	#hero a {
+	.cvButton {
 		text-transform: uppercase;
-		max-width: none;
+		/* max-width: none; */
 	}
 }
 
 /* Media Query 768px */
-@media (min-width: 48rem){
-  #hero {
+@media (min-width: 48rem) {
+	#hero {
 		margin: 0rem auto;
 		margin-top: 5rem;
 		flex-direction: row-reverse;
@@ -63,9 +62,9 @@
 		max-width: 45rem;
 	}
 
-	#hero a {
+	.cvButton {
 		text-transform: uppercase;
-		max-width: none;
+		width: 60%;
 		margin-top: 2rem;
 	}
 
@@ -79,10 +78,32 @@
 }
 
 /* Media Query 1024px */
-@media (min-width: 64rem){
-  #hero {
-		max-width: 50rem;
+@media (min-width: 64rem) {
+	#hero {
+		max-width: 60rem;
+	}
+
+	#hero img {
+		align-self: flex-end;
+	}
+
+	.title p {
+		font-size: 2rem;
+	}
+
+	.text,
+	.cvButton {
+		font-size: 1.25rem;
 	}
 }
-	
 
+/* Media Query 1440px */
+@media (min-width: 90rem) {
+	#hero {
+		max-width: 85rem;
+	}
+
+	.cvButton {
+		max-width: 20rem;
+	}
+}
