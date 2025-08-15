@@ -1,42 +1,96 @@
 .projectContainer {
-    padding: 1rem;
-    margin: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
 }
 
 .projectContainer img {
-    border-radius: 4px;
-    object-fit: cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+	display: block;
+	width: 100%;
+	border-radius: 4px;
+	object-fit: cover;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
 }
 
-
 .btnWrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 .githubLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 3rem;
-    width: 3rem;
-    min-width: 32px;
-    min-height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 3rem;
+	width: 3rem;
+	min-width: 32px;
+	min-height: 32px;
 }
 
 .githubLink svg {
-    font-size: 2.25rem;
+	font-size: 2.25rem;
 }
 
+.deployLink {
+	max-width: 16rem;
+}
 
 .deployLink svg {
-    color: var(--text-color);
-    font-size: 2em;
+	color: var(--text-color);
+	font-size: 2em;
+}
+
+/* Media Query 512px */
+/* @media (min-width: 32rem) {
+	.projectContainer {
+	}
+} */
+
+/* Media Query 768px */
+@media (min-width: 48rem) {
+	.projectContainer {
+		padding: 1rem 2rem;
+		max-width: 40rem;
+	}
+
+	.aboutContainer aside {
+		padding: 1rem 2rem;
+	}
+}
+
+/* Media Query 1024px */
+@media (min-width: 64rem) {
+	.projectContainer {
+		padding: 2rem;
+		justify-content: space-between;
+		height: 50rem;
+	}
+
+    .projectContainer img {
+        height: 12.5rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+	.projectContainer aside {
+		font-size: 1.25rem;
+	}
+
+	.btnWrapper {
+		justify-content: space-between;
+	}
+}
+
+/* Media Query 1440px */
+@media (min-width: 90rem) {
+	.projectContainer img {
+        height: 16rem;
+        object-fit: cover;
+        object-position: center;
+    }
 }

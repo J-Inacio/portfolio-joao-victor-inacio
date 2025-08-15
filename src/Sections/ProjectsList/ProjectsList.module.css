@@ -38,3 +38,62 @@
     filter: brightness(1.1);
 }
 
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+/* Media Query 512px */
+@media (min-width: 32rem) {
+	.projectsContainer  {
+		margin: 1rem 1.25rem;
+	}
+
+	.projectsList  {
+		padding: 1rem 1.25rem;
+	}
+}
+
+/* Media Query 768px */
+@media (min-width: 48rem) {
+	.projectsContainer {
+		margin: 0rem auto;
+		margin-top: 2rem;
+		max-width: 45.125rem;
+        justify-content: center;
+        align-items: center;
+	}
+
+    .projectsContainer h2 {
+        width: 100%;
+    }
+}
+
+/* Media Query 1024px */
+@media (min-width: 64rem) {
+	.projectsContainer {
+		max-width: 60.125rem;
+	}
+
+    .projectsList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+	.aboutContainer aside, .aboutContainer button, .moreProjects {
+		font-size: 1.25rem;
+	}
+}
+
+/* Media Query 1440px */
+@media (min-width: 90rem) {
+	.projectsContainer  {
+		max-width: 85.125rem;
+	}
+}

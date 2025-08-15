@@ -17,7 +17,7 @@ const Project = ({
 	const { t } = useTranslation();
 	const { ref, inView } = useScrollAnimation();
 	return (
-		<div
+		<li
 			ref={ref}
 			className={`
 			${styles.projectContainer} 
@@ -59,7 +59,7 @@ const Project = ({
 					<p>{t("projects.viewButton")}</p> <IoEyeSharp />
 				</a>
 			</div>
-		</div>
+		</li>
 	);
 };
 

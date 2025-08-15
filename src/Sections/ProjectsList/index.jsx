@@ -46,7 +46,7 @@ const ProjectsList = ({ onImageClick }) => {
 				id="projects"
 			>
 				<h2>{t("projects.projectsTitle")}</h2>
-				<ul>
+				<ul className={styles.projectsList}>
 					{projectsData.map(
 						({
 							img,
