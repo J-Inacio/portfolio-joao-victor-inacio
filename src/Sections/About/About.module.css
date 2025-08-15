@@ -48,3 +48,48 @@
 .aboutContainer aside li:first-child {
 	border-top: none;
 }
+
+/* Media Query 512px */
+@media (min-width: 32rem) {
+	.aboutContainer  {
+		margin: 1rem 1.25rem;
+		
+	}
+
+	.aboutContainer aside  {
+		padding: 1rem 2rem;
+		
+	}
+}
+
+/* Media Query 768px */
+@media (min-width: 48rem) {
+	.aboutContainer {
+		margin: 0rem auto;
+		margin-top: 2rem;
+		max-width: 45.125rem;
+	}
+
+	.aboutContainer aside  {
+		padding: 1rem 2rem;
+		
+	}
+}
+
+/* Media Query 1024px */
+@media (min-width: 64rem) {
+	.aboutContainer  {
+		max-width: 60.125rem;
+	}
+
+	.aboutContainer aside, .aboutContainer button {
+		font-size: 1.25rem;
+	}
+}
+
+/* Media Query 1440px */
+@media (min-width: 90rem) {
+	.aboutContainer {
+		max-width: 85.125rem;
+	}
+}
