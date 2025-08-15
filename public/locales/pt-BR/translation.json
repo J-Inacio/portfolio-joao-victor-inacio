@@ -35,6 +35,8 @@
     "gasfinderTxt": "GasFinder, é um projeto que facilita a busca pelos melhores preços de combustíveis e postos próximos a você! Desenvolvido como Trabalho de Conclusão de Curso (TCC) na ETEC de Embu, o GasFinder utiliza dados atualizados da ANP (Agência Nacional do Petróleo) para fornecer informações precisas e confiáveis.",
     "transactionManagerTitle": "Gerenciador de Transações",
     "transactionManagerTxt": "Este projeto foi desenvolvido para exercitar o uso de requisições a uma API, utilizando a ferramenta json-server para simular uma API RESTful a partir de um arquivo JSON. No projeto é possível adicionar, editar e remover transações utilizando métodos: POST | PUT | DELETE",
+    "weatherTitle": "Wheater API",
+    "weatherTxt": "O Weather App é um aplicativo de clima desenvolvido para exibir informações em tempo real com base na cidade pesquisada pelo usuário. O projeto integra a Unsplash API para exibir fotos da cidade de acordo com o período do dia e a orientação da tela.",
     "viewButton": "Veja o Projeto",
     "moreProjects": "Ver mais projetos",
     "technologies": "Tecnologias:"

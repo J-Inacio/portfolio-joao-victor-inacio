@@ -38,6 +38,14 @@ const ProjectsList = ({ onImageClick }) => {
 			repositoryLink: "https://github.com/J-Inacio/transactions-with-api",
 			deployLink: "https://github.com/J-Inacio/transactions-with-api",
 		},
+		{
+			img: "https://github.com/J-Inacio/weather-api/blob/main/screenshot.jpg?raw=true",
+			skills: ["Javascript", "HTML", "CSS", "Rest API", "DOM", "Unsplash API", "Open Weather API"  ],
+			projectText: "projects.weatherTxt",
+			title: "projects.weatherTitle",
+			repositoryLink: "https://github.com/J-Inacio/weather-api",
+			deployLink: "https://weather-api-neon-six.vercel.app/",
+		}
 	];
 	return (
 		<Element name="projects">
