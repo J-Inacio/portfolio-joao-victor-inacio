@@ -80,10 +80,6 @@
 	.projectContainer aside {
 		font-size: 1.25rem;
 	}
-
-	.btnWrapper {
-		justify-content: space-between;
-	}
 }
 
 /* Media Query 1440px */

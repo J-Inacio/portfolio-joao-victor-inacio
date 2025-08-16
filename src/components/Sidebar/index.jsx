@@ -8,7 +8,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 			<button className={styles.closeButton} onClick={onClose}>
 				<IoCloseSharp color="var(--text-color)" />
 			</button>
-			<NavLinks/>
+			<NavLinks onClose={onClose}/>
 		</div>
 	);
 };

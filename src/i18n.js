@@ -3,14 +3,14 @@ import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
 
 i18n
-  .use(HttpApi) // Permite carregar traduções de um servidor/pasta public
-  .use(initReactI18next) // Passa a instância do i18n para o react-i18next
+  .use(HttpApi) 
+  .use(initReactI18next) 
   .init({
-    supportedLngs: ['pt-BR', 'pt', 'en'], // Idiomas suportados
-    fallbackLng: 'pt-BR', // Idioma padrão caso a tradução não seja encontrada
-    debug: true, // Ativa logs no console para depuração
+    supportedLngs: ['pt-BR', 'pt', 'en'],
+    fallbackLng: 'pt-BR', 
+    debug: false, 
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json', // Caminho para os arquivos de tradução
+      loadPath: '/locales/{{lng}}/translation.json',
     },
     react: {
       useSuspense: true,
