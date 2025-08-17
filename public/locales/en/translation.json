@@ -44,6 +44,60 @@
   "skills": {
     "skillsTitle": "My Skills"
   },
+  "softSkill": {
+
+		"teamwork": {
+
+			"title": "Collaborative",
+			"txtP1": "I value collaboration and believe that strong results come when different ideas complement each other. I know how to listen, share knowledge, and strive for balance between teamwork and individual responsibilities.",
+			"txtP2": "I actively contribute to creating a positive and productive work environment, where open communication and mutual respect are top priorities. I enjoy helping my colleagues overcome challenges and celebrating achievements together."
+		},
+
+		"proactive": {
+
+			"title": "Proactive",
+			"txtP1": "I’m a proactive person, always striving to anticipate needs and find solutions before they turn into problems.",
+			"txtP2": "I enjoy taking initiative and contributing in a practical way to move projects forward."
+
+		},
+
+		"resolution": {
+
+			"title": "Problem Solver",
+			"txtP1": "I see bugs and coding challenges as learning opportunities, using documentation and forums to find solutions. I enjoy the process of investigating the root cause of a problem until I can solve it.",
+			"txtP2": " In my projects, I have developed the ability to debug code logically and persistently to ensure features run as expected. I am ready to apply this persistence to solve the daily challenges of a real project."
+		},
+
+		"curious": {
+
+			"title": "Curious and Focused on Learning",
+			"txtP1": "As a front-end developer, I know that technology evolves quickly, and I have a strong motivation to learn. I am always studying new libraries and improving my skills in frameworks like React.",
+			"txtP2": "This desire to learn allows me to quickly absorb the coding standards and technologies used by the team. I aim to become a productive member who adds value while continuing to develop."
+		},
+    "flexible": {
+
+			"title": "Flexible and Adaptable",
+			"txtP1": "During my studies and academic projects, I learned to adapt to new requirements and feedback that changed the course of the work. I understand that flexibility is essential for building a good product.",
+			"txtP2": "I am prepared to adjust to the company's methodologies and tools, contributing in the best way possible at each stage of the project. I see changes as a chance to learn a new way of doing things."
+		},
+    "empathetic": {
+
+			"title": "Empático",
+			"txtP1": "I strive to develop my interfaces thinking about the experience of those who will use them, trying to anticipate their needs and difficulties.",
+			"txtP2": "I want to use this empathy to understand user goals and contribute to product discussions, even as a trainee developer. I believe this helps create a more cohesive team environment and a better final product."
+		},
+    "creative": {
+
+			"title": "Creative",
+			"txtP1": "I enjoy finding creative ways to solve UI and UX challenges within technical constraints. I am always looking for references to create visually pleasing and functional components.",
+			"txtP2": "Even as a beginner, I can contribute with new ideas and perspectives to front-end challenges. I want to use my creativity to help the team build solutions that delight users."
+		},
+    "focused": {
+			"title": "Organized and Focused",
+			"txtP1": "To balance my studies with the development of my final project, I learned to organize my tasks and manage my time effectively. I used boards and lists to set priorities and ensure deadlines were met.",
+			"txtP2": "In a professional environment, this organization will help me focus on assigned tasks and deliver my work with quality and on time. I demonstrate my commitment through a structured work routine.."
+		}
+	},
    "footer": {
     "contactTitle": "Contact Me",
     "footerTxt": "© 2025 - Created and Developed by"
