@@ -1,12 +1,8 @@
-// src/components/ImageModal.jsx (VERSÃO CORRIGIDA)
-
 import { useEffect } from "react";
 import styles from "./ImageModal.module.css";
 
-// 1. AQUI ESTÁ A MUDANÇA PRINCIPAL: use { chaves } para desestruturar as props
 const ImageModal = ({ src, alt, isOpen, onClose }) => {
     
-    // Se não estiver aberto, não renderiza nada.
     if (!isOpen) {
         return null;
     }
@@ -27,7 +23,6 @@ const ImageModal = ({ src, alt, isOpen, onClose }) => {
         event.stopPropagation();
     };
 
-    // 2. ADICIONE O 'RETURN' AQUI
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
             <div className={styles.modalContent} onClick={handleContentClick}>
