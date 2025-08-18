@@ -4,8 +4,18 @@ import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import SoftSkills from "../../components/SoftSkills";
-import { FaHandshakeSimple, FaMagnifyingGlass } from "react-icons/fa6";
-import { IoExtensionPuzzleSharp, IoHeartCircle, IoRocket, IoSparkles, IoSearchSharp, IoShuffle, IoLibrary, IoPeople} from "react-icons/io5";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+	IoExtensionPuzzleSharp,
+	IoHeartCircle,
+	IoRocket,
+	IoSparkles,
+	IoSearchSharp,
+	IoShuffle,
+	IoLibrary,
+	IoPeople,
+} from "react-icons/io5";
+import { useState } from "react";
 
 const technologiesData = [
 	{
@@ -70,52 +80,54 @@ const softSkills = [
 		text2: "softSkill.teamwork.txtP2",
 	},
 	{
-		icon: <IoRocket /> ,
+		icon: <IoRocket />,
 		name: "softSkill.proactive.title",
 		text1: "softSkill.proactive.txtP1",
-		text2: "softSkill.proactive.txtP2"
+		text2: "softSkill.proactive.txtP2",
 	},
 	{
 		icon: <IoExtensionPuzzleSharp />,
 		name: "softSkill.resolution.title",
 		text1: "softSkill.resolution.txtP1",
-		text2: "softSkill.resolution.txtP2"
+		text2: "softSkill.resolution.txtP2",
 	},
 	{
-		icon: <IoSearchSharp /> ,
+		icon: <IoSearchSharp />,
 		name: "softSkill.curious.title",
 		text1: "softSkill.curious.txtP1",
-		text2: "softSkill.curious.txtP2"
+		text2: "softSkill.curious.txtP2",
 	},
 	{
 		icon: <IoShuffle />,
 		name: "softSkill.flexible.title",
 		text1: "softSkill.flexible.txtP1",
-		text2: "softSkill.flexible.txtP2"
+		text2: "softSkill.flexible.txtP2",
 	},
 	{
 		icon: <IoHeartCircle />,
 		name: "softSkill.empathetic.title",
 		text1: "softSkill.empathetic.txtP1",
-		text2: "softSkill.empathetic.txtP2"
+		text2: "softSkill.empathetic.txtP2",
 	},
 	{
 		icon: <IoSparkles />,
 		name: "softSkill.creative.title",
 		text1: "softSkill.creative.txtP1",
-		text2: "softSkill.creative.txtP2"
+		text2: "softSkill.creative.txtP2",
 	},
 	{
 		icon: <IoLibrary />,
 		name: "softSkill.focused.title",
 		text1: "softSkill.focused.txtP1",
-		text2: "softSkill.focused.txtP2"
+		text2: "softSkill.focused.txtP2",
 	},
 ];
 
 const Skills = () => {
 	const { t } = useTranslation();
 	const { ref, inView } = useScrollAnimation();
+	const [softSkillBody, setSoftSkillBody] = useState("teamwork");
+
 	return (
 		<Element id="#skills">
 			<section className={`${styles.mainContainerSkills} glassFilter`}>
@@ -140,19 +152,41 @@ const Skills = () => {
 
 			<section className={`${styles.mainContainerSkills} glassFilter`}>
 				<h2>Soft Skills</h2>
-				<ul className={styles.SoftSkillsMainContainer}>
-					{softSkills.map((softSkill) => {
-						return (
-							<SoftSkills
-								key={softSkill.name}
-								icon={softSkill.icon}
-								skillName={t(softSkill.name)}
-								skillTxt1={t(softSkill.text1)}
-								skillTxt2={t(softSkill.text2)}
-							/>
-						);
-					})}
-				</ul>
+				<div className={styles.SoftSkillsMainContainer}>
+					<ul className={styles.SoftSkillsListContainer}>
+						{softSkills.map((softSkill) => {
+							return (
+								<SoftSkills
+									key={softSkill.name}
+									icon={softSkill.icon}
+									skillName={t(softSkill.name)}
+									onClick={() => setSoftSkillBody(softSkill.name.split(".")[1])}
+									className={`${
+										softSkill.name.split(".")[1] === softSkillBody
+											? styles.activeSoftSkill
+											: styles.softSkill
+									}`}
+								/>
+							);
+						})}
+					</ul>
+					<div className={styles.asideContainer}>
+						<AnimatePresence>
+							<motion.aside
+								key={softSkillBody}
+								initial={{ opacity: 0, x: 50 }}
+								animate={{ opacity: 1, x: 0 }}
+								exit={{ opacity: 0, x: -20 }}
+								transition={{ duration: 0.3 }}
+								className={`liteGlassFilter ${styles.softSkillsAside}`}
+							>
+								<h3>{t(`softSkill.${softSkillBody}.title`)}</h3>
+								<p>{t(`softSkill.${softSkillBody}.txtP1`)}</p>
+								<p>{t(`softSkill.${softSkillBody}.txtP2`)}</p>
+							</motion.aside>
+						</AnimatePresence>
+					</div>
+				</div>
 			</section>
 		</Element>
 	);
