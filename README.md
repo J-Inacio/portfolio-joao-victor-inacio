@@ -1,12 +1,32 @@
-# React + Vite
+# Meu Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Prévia do Portfólio](./src/assets/img/screenshot.jpg)
 
-Currently, two official plugins are available:
+> Meu portfólio de desenvolvedor.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[Acesse a versão ao vivo aqui!]([https://portfolio-joao-victor-inacio.vercel.app/])**
 
-## Expanding the ESLint configuration
+---
+## 📜 Sobre o Projeto
+Este projeto é a minha vitrine profissional como desenvolvedor front-end. O objetivo foi criar uma experiência de usuário agradável e ao mesmo tempo manter minha identidade visual, me inspirando na estética glassmorphism e utilizando CSS e React para apresentar meus projetos, habilidades e trajetória. A aplicação foi desenvolvida com foco em mostrar quem eu sou como profissional desenvolvedor.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features Principais
+
+* **🎨 Tema Dinâmico:** Switcher para alternar entre os temas **Claro (Light)** e **Escuro (Dark)**, com todas as cores gerenciadas via variáveis CSS.
+* **🌐 Suporte a Múltiplos Idiomas:** Totalmente traduzido para Português e Inglês usando a biblioteca **i18next**.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
+
+* **Core:** React.js, Vite
+* **Estilização:** CSS Modules, Variáveis CSS para Theming
+* **Animação:** `react-type-animation`, `react-intersection-observer` (via custom hook)
+* **Navegação:** `react-scroll`
+* **Internacionalização:** `react-i18next`, `i18next-http-backend`
+* **Ícones:** `react-icons`
+
+---
