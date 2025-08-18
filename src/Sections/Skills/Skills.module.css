@@ -42,10 +42,12 @@
 		margin: 1rem 1.25rem;
 	}
 
-	.skillsContainer  {
+	.skillsContainer, .SoftSkillsMainContainer  {
 		padding: 1rem 1.25rem;
         grid-template-columns: repeat(4, 1fr);
 	}
+
+   
 }
 
 /* Media Query 768px */
@@ -55,6 +57,23 @@
 		margin-top: 2rem;
 		max-width: 45.125rem; 
 	}
+
+    .SoftSkillsMainContainer {
+        display: grid;
+        padding: 2rem;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .SoftSkillsMainContainer li {
+        width: 20rem;
+    }
+
+    .SoftSkillsMainContainer li aside {
+        height: 22.5rem;
+    }
     
     .skillsContainer  {
 		grid-template-columns: repeat(5, 1fr);

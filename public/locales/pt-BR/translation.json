@@ -39,57 +39,46 @@
 		"moreProjects": "Ver mais projetos",
 		"technologies": "Tecnologias:"
 	},
-	"skills": {
-		"skillsTitle": "Minhas Habilidades"
-	},
 	"softSkill": {
-
 		"teamwork": {
-
 			"title": "Colaborativo",
 			"txtP1": "Valorizo a colaboração e acredito que resultados sólidos surgem quando diferentes ideias se complementam. Sei ouvir, trocar conhecimento e buscar o equilíbrio entre o coletivo e as responsabilidades individuais.",
 			"txtP2": "Contribuo ativamente para um ambiente de trabalho positivo e produtivo, onde a comunicação aberta e o respeito mútuo são prioridades. Gosto de ajudar meus colegas a superar desafios e celebrar as conquistas em conjunto."
 		},
 
 		"proactive": {
-
 			"title": "Proativo",
 			"txtP1": "Sou uma pessoa proativa, sempre em busca de antecipar necessidades e encontrar soluções antes que se tornem problemas.",
 			"txtP2": "Gosto de tomar iniciativa e contribuir de forma prática para o avanço dos projetos."
 		},
 
 		"resolution": {
-
 			"title": "Resolução de Problemas",
 			"txtP1": "Encaro bugs e desafios de código como oportunidades de aprendizado, utilizando a documentação e fóruns para encontrar soluções. Gosto do processo de investigar a causa de um problema até conseguir resolvê-lo.",
 			"txtP2": "Em meus projetos, desenvolvi a habilidade de depurar o código de forma lógica e persistente para garantir que as funcionalidades rodem como esperado. Estou preparado para aplicar essa persistência na resolução dos desafios diários de um projeto real."
 		},
 
 		"curious": {
-
 			"title": "Curioso e Autodidata",
 			"txtP1": "Como desenvolvedor front-end, sei que a tecnologia evolui rapidamente e tenho uma grande motivação para aprender. Estou sempre estudando novas bibliotecas e aprimorando minhas habilidades em frameworks como React.",
 			"txtP2": "Essa vontade de aprender me permite absorver rapidamente os padrões de código e as tecnologias usadas pela equipe. Tenho o objetivo de me tornar um membro produtivo que agrega valor enquanto continua a se desenvolver."
 		},
-    "flexible": {
-
+		"flexible": {
 			"title": "Flexível e Adaptável",
 			"txtP1": " Durante meus estudos e projetos acadêmicos, aprendi a me adaptar a novos requisitos e a feedbacks que mudavam o rumo do trabalho. Entendo que a flexibilidade é essencial para a construção de um bom produto",
 			"txtP2": "Estou sempre preparado para me ajustar às metodologias e ferramentas de diferentes ambientes de trabalho, contribuindo da melhor forma em cada etapa do projeto. Vejo as mudanças como uma chance de aprender uma nova maneira de fazer as coisas."
 		},
-    "empathetic": {
-
+		"empathetic": {
 			"title": "Empático",
 			"txtP1": "Busco desenvolver minhas interfaces pensando na experiência de quem vai usá-las, tentando prever suas necessidades e dificuldades.",
 			"txtP2": "Quero usar essa empatia para entender os objetivos dos usuários e contribuir em discussões de produto, mesmo sendo um dev estagiário. Acredito que isso ajuda a criar um ambiente de equipe mais unido e um produto final melhor."
 		},
-    "creative": {
-
+		"creative": {
 			"title": "Criativo",
 			"txtP1": "Gosto de encontrar maneiras criativas para resolver desafios de interface e experiência do usuário dentro das limitações técnicas. Estou sempre buscando referências para criar componentes visualmente agradáveis e funcionais.",
 			"txtP2": "Mesmo como iniciante, posso contribuir com novas ideias e perspectivas para os desafios de front-end. Quero usar minha criatividade para ajudar a equipe a construir soluções que encantem os usuários."
 		},
-    "focused": {
+		"focused": {
 			"title": "Organizado e Focado",
 			"txtP1": "Para conciliar os estudos com o desenvolvimento do TCC, aprendi a organizar minhas tarefas e a gerenciar meu tempo de forma eficaz. Usei quadros e listas para definir prioridades e garantir que os prazos fossem cumpridos.",
 			"txtP2": "Em um ambiente profissional, essa organização me ajudará a focar nas tarefas designadas e a entregar meu trabalho com qualidade e pontualidade. Demonstro meu comprometimento através de uma rotina de trabalho estruturada."

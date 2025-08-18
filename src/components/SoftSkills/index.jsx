@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { MdOutlineExpandMore } from "react-icons/md";
 
 const SoftSkills = ({ icon, skillName, skillTxt1, skillTxt2 }) => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(true);
 	return (
 		<li className={` ${styles.mainSoftSkills}`}>
 			<div

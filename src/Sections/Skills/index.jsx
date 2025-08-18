@@ -119,7 +119,7 @@ const Skills = () => {
 	return (
 		<Element id="#skills">
 			<section className={`${styles.mainContainerSkills} glassFilter`}>
-				<h2>{t("skills.skillsTitle")}</h2>
+				<h2>Hard Skills</h2>
 				<div
 					ref={ref}
 					className={`
