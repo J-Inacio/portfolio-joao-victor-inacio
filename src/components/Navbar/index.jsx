@@ -25,7 +25,7 @@ const Navbar = ({ children }) => {
 		});
 	};
 	return (
-		<nav className={`${styles.navbar} liteGlassFilter`}>
+		<nav className={`${styles.navbar} glassFilter`}>
 			<div className={styles.logoWrapper} onClick={scrollHome}>
 				<span>&lt; / &gt;</span>{" "}
 				<span style={{ fontFamily: "Unica One" }}>

@@ -37,7 +37,7 @@ const Footer = () => {
 				ref={ref}
 				className={`
 				${styles.footerContainer} 
-				liteGlassFilter
+				glassFilter
 				fade-in-section
 				${inView ? "is-visible" : ""}
 				`}

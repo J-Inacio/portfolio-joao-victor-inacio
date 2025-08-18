@@ -23,7 +23,7 @@ const Project = ({
 			${styles.projectContainer} 
 			fade-in-section
 			${inView ? "is-visible" : ""}
-			liteGlassFilter
+			glassFilter
 		`}
 		>
 			<img

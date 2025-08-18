@@ -185,7 +185,7 @@ const Skills = () => {
 								exit={{ opacity: 0, x: -20 }}
 								transition={{ duration: 0.3 }}
 								className={`
-									liteGlassFilter 
+									glassFilter 
 									${styles.softSkillsAside}
 									
 									`}

@@ -10,7 +10,7 @@ const Hero = () => {
 	const { t } = useTranslation();
 	return (
 		<Element name="hero">
-			<section id={styles.hero} className="liteGlassFilter">
+			<section id={styles.hero} className="glassFilter">
 				<img src={perfilPhoto} alt="Foto João" />
 				<div className={styles.contentWrapper}>
 					<aside className={styles.title}>

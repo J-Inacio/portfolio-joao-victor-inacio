@@ -72,7 +72,7 @@ const About = () => {
 				id="about"
 				className={`
 					${styles.aboutContainer} 
-					liteGlassFilter
+					glassFilter
 					fade-in-section
 					${inView ? "is-visible" : ""}
 					`}

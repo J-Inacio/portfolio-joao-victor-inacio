@@ -20,7 +20,7 @@
 
 .local::before {
     content: "•";
-    color: var(--btn-color);
-    font-size: 2rem;
+    color: rgba(20, 150, 228, 1);
+    font-size: 2.25rem;
 }
 

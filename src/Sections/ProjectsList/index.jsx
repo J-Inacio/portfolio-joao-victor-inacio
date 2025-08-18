@@ -50,7 +50,7 @@ const ProjectsList = ({ onImageClick }) => {
 	return (
 		<Element name="projects">
 			<section
-				className={`${styles.projectsContainer} liteGlassFilter`}
+				className={`${styles.projectsContainer} glassFilter`}
 				id="projects"
 			>
 				<h2>{t("projects.projectsTitle")}</h2>
