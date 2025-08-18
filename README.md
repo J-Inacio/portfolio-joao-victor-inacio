@@ -4,7 +4,7 @@
 
 > Meu portfólio de desenvolvedor.
 
-**[Acesse a versão ao vivo aqui!]([https://portfolio-joao-victor-inacio.vercel.app/])**
+**[Acesse a versão ao vivo aqui!](https://portfolio-joao-victor-inacio.vercel.app/)**
 
 ---
 ## 📜 Sobre o Projeto
