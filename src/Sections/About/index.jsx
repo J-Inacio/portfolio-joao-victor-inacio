@@ -18,7 +18,8 @@ const About = () => {
 				<p>{t("about.aboutP3")}</p>
 			</>
 		),
-		// experience: <TimelineCard data={"Set 2025 - Atualmente"} local={"Natura & Co"} title={"Estagiário Software Engineer"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed tristique mauris, et consectetur nulla. Vivamus eu sapien quis odio fermentum egestas varius ut mauris. Sed ut velit eros. Aliquam erat volutpat. Donec a ante orci. Fusce tristique ac leo at tempus. Etiam pharetra eget orci in eleifend. Phasellus sit amet nibh quam. Cras sodales lorem vitae elit sollicitudin dignissim at et felis. Mauris eu felis sed lorem volutpat rhoncus. Vestibulum aliquet, velit placerat elementum feugiat, nunc ipsum viverra lectus, sed dapibus neque enim sed augue."}>
+		experience: "Em breve",
+		// <TimelineCard data={"Set 2025 - Atualmente"} local={"Natura & Co"} title={"Estagiário Software Engineer"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed tristique mauris, et consectetur nulla. Vivamus eu sapien quis odio fermentum egestas varius ut mauris. Sed ut velit eros. Aliquam erat volutpat. Donec a ante orci. Fusce tristique ac leo at tempus. Etiam pharetra eget orci in eleifend. Phasellus sit amet nibh quam. Cras sodales lorem vitae elit sollicitudin dignissim at et felis. Mauris eu felis sed lorem volutpat rhoncus. Vestibulum aliquet, velit placerat elementum feugiat, nunc ipsum viverra lectus, sed dapibus neque enim sed augue."}>
 
 		// </TimelineCard>,
 		education: (

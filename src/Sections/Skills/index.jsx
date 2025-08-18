@@ -153,7 +153,11 @@ const Skills = () => {
 			<section className={`${styles.mainContainerSkills} glassFilter`}>
 				<h2>Soft Skills</h2>
 				<div className={styles.SoftSkillsMainContainer}>
-					<ul className={styles.SoftSkillsListContainer}>
+					<ul
+						ref={ref}
+						className={`${styles.SoftSkillsListContainer} fade-in-section
+									${inView ? "is-visible" : ""}`}
+					>
 						{softSkills.map((softSkill) => {
 							return (
 								<SoftSkills
@@ -165,7 +169,9 @@ const Skills = () => {
 										softSkill.name.split(".")[1] === softSkillBody
 											? styles.activeSoftSkill
 											: styles.softSkill
-									}`}
+									} 
+									
+									`}
 								/>
 							);
 						})}
@@ -178,7 +184,11 @@ const Skills = () => {
 								animate={{ opacity: 1, x: 0 }}
 								exit={{ opacity: 0, x: -20 }}
 								transition={{ duration: 0.3 }}
-								className={`liteGlassFilter ${styles.softSkillsAside}`}
+								className={`
+									liteGlassFilter 
+									${styles.softSkillsAside}
+									
+									`}
 							>
 								<h3>{t(`softSkill.${softSkillBody}.title`)}</h3>
 								<p>{t(`softSkill.${softSkillBody}.txtP1`)}</p>
