@@ -1,0 +1,101 @@
+:root {
+	--bg-color: linear-gradient(45deg, #f8f9fa, #e9ecef, #d6e2e9);
+	--text-color: #012a4a;
+	--glass-color: rgba(214, 234, 248, 0.4);
+	--bold-glass-color: rgba(1, 42, 74, 0.4);
+	--btn-color: #f8f9fa;
+	--active-bg: rgba(127, 164, 190, 0.2);
+	--button-glass-bg: rgba(214, 234, 248, 0.2);
+	--button-border-color: rgba(1, 42, 74, 0.2);
+	--button-text-shadow: rgba(2, 62, 138, 0.2);
+	--button-highlight-border: rgba(255, 255, 255, 0.8); 
+  	--button-shadow-border: rgba(1, 42, 74, 0.25);
+	 --circle-color-1: rgba(231, 60, 126, .8);  
+  	--circle-color-2: rgba(20, 150, 228, .8);  
+  	--circle-color-3: rgba(45, 211, 191, .8);  
+  	--circle-color-4: rgba(168, 50, 220, .8);   
+}
+
+[data-theme="dark"] {
+	--bg-color: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77);
+	--text-color: #f4f4f4;
+	--glass-color: rgba(255, 255, 255, 0.1);
+	--bold-glass-color: rgba(255, 255, 255, 0.623);
+	--btn-color: #012a4a;
+	--active-bg: rgba(214, 234, 248, 0.2);
+	--button-glass-bg: rgba(255, 255, 255, 0.1);
+	--button-border-color: rgba(255, 255, 255, 0.5);
+	--button-text-shadow: rgba(255, 255, 255, 0.25);
+	--button-highlight-border: rgba(255, 255, 255, 0.4); 
+  	--button-shadow-border: rgba(0, 0, 0, 0.4); 
+
+	--circle-color-1: rgba(255, 255, 255, 0.15);  
+  	--circle-color-2: rgba(255, 255, 255, 0.15);  
+  	--circle-color-3: rgba(255, 255, 255, 0.15);  
+  	--circle-color-4: rgba(255, 255, 255, 0.15);   
+}
+
+body {
+	font-family: "Manrope", "san-serif";
+	color: var(--text-color);
+	background: var(--bg-color);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+	width: 100%;
+}
+
+.glassFilter {
+	background: var(--glass-color);
+	border-radius: 0.25rem;
+	/* border: 1px solid var(--button-border-color); */
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fade-in-section {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.glass-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	padding: 0.25rem 0.5rem;
+	color: var(--text-color);
+	text-shadow: 1px 1px 5px var(--button-text-shadow);
+	border: 1px solid;
+	background: var(--button-glass-bg);
+	overflow: hidden;
+	font-weight: bold;
+	gap: 1rem;
+	border-radius: 0.25rem;
+	transition: 0.2s;
+	width: 85%;
+	text-decoration: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-color: var(--button-border-color);
+}
+
+.glass-btn:hover {
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0.144),
+		rgba(255, 255, 255, 0.247),
+		rgba(255, 255, 255, 0.39)
+	);
+	box-shadow: none;
+	background: var(--button-glass-bg);
+	transform: translateY(2px);
+	color: var(--text-color);
+}
