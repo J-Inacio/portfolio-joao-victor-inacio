@@ -1,0 +1,26 @@
+.container {
+    list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   border-top: 1px solid var(--button-border-color);
+}
+
+.data {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local::before {
+    content: "•";
+    color: rgba(20, 150, 228, 1);
+    font-size: 2.25rem;
+}
+

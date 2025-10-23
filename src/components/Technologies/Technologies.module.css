@@ -1,0 +1,14 @@
+.techContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    object-fit: cover;
+    padding: .5rem;
+    transition: 0.2s;
+}
+
+.techContainer:hover {
+    box-shadow: none;
+    transform: translateY(2px);
+}

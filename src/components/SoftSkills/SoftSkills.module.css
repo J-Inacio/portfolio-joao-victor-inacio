@@ -1,0 +1,32 @@
+.mainSoftSkills {
+	list-style: none;
+	cursor: pointer;
+	transition: 0.2s;
+	border-radius: 0.25rem;
+}
+
+.mainSoftSkills:hover {
+	box-shadow: none;
+	transform: translateY(2px);
+}
+
+.softSkills {
+	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 2rem;
+	padding: 1.5rem 1rem;
+	width: 100%;
+	font-weight: bold;
+}
+
+.softSkills svg {
+	font-size: 1.5rem;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
